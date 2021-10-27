@@ -1,0 +1,183 @@
+<!-- Footer -->
+<footer class="text-center text-black" style="background-color: rgb(88, 178, 121);">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/cjzhybrid/" role="button" target="_blank"
+          ><i class="fa fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/chou_cj" role="button" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="http://google.com/search?q=multiforums" role="button" target="_blank"
+          ><i class="fa fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/cjz_beastmode/" role="button" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/CJZhybrid" role="button" target="_blank"
+          ><i class="fa fa-github"></i
+        ></a>
+
+        <!-- Youtube -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCFNhTkUZ3ay3SVCknip-W8A" role="button" target="_blank"
+        ><i class="fa fa-youtube"></i
+        ></a>
+      
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="{% url 'newsletter' %}" method="POST">{% csrf_token %}
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" name="email" id="form5Example2" class="form-control" />
+                <label class="form-label" for="form5Example2">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+            Have any questions or suggestions to us? You are welcomed to contact us anytime! Write an email to euro2020predictor_app@outlook.com or drop
+            a DM under our social media accounts (Facebook, Twitter, Instagram, Youtube, links are shown above).
+          
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="{% url 'about_us' %}" class="text-white">About Us</a>
+              </li>
+              <li>
+                <a href="{% url 'newsroom' %}" class="text-white">Newsroom</a>
+              </li>
+              <li>
+                <a href="{% url 'devblog' %}" class="text-white">Developer Blog</a>
+              </li>
+              <li>
+                <a href="{% url 'help_us' %}" class="text-white">Help Us</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Notices</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="{% url 'terms_and_notices' %}" class="text-white">Privacy Notice</a>
+              </li>
+              <li>
+                <a href="{% url 'terms_and_notices' %}" class="text-white">Ads Notice</a>
+              </li>
+              <li>
+                <a href="{% url 'terms_and_notices' %}" class="text-white">Cookie Notice</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Terms</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="{% url 'terms_and_notices' %}" class="text-white">Legal</a>
+              </li>
+              <li>
+                <a href="{% url 'terms_and_notices' %}" class="text-white">Terms of Use</a>
+              </li>
+              <li>
+                <a href="{% url 'terms_and_notices' %}" class="text-white">API</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Tools</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="https://getbootstrap.com/" class="text-white" target="_blank">Bootstrap</a>
+              </li>
+              <li>
+                <a href="https://www.countryflags.com/" class="text-white" target="_blank">Country Flags</a>
+              </li>
+              <li>
+                <a href="https://www.djangoproject.com/" class="text-white" target="_blank">Django</a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/" class="text-white" target="_blank">Stack Overflow</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white" href="">euro2020predictor.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->

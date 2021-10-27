@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}
+News
+{% endblock %}
+
+{% block body %}
+
+<div style="display: flex; flex-direction: row;">
+    <div style="width: 8%;"></div>
+    <div style="width: 84%;">
+        <h1>Newsroom</h1>
+        <div style="height: 100px;"></div>
+        <div>
+            
+            {% for i in post %}
+            <div>
+                <div style="display: flex; flex-direction: row;">
+                    <a style="color: white" href="{% url 'detail_news' id=i.id %}"><h3>{{ i.title }}</h3>  </a>
+                    <div style="margin: 5px 5px 5px 20px;">
+                        <i class='fa fa-user'></i> {{ i.author }}
+                    </div>  
+                </div>
+                <div style="height: 10px;"></div>
+                <div>
+                    {{ i.content | truncatechars:200 }}
+                </div>
+            </div>
+            <br><br><hr><br>
+            {% endfor %}    
+            
+        </div>
+
+        <br><br>
+
+        <div class="pagination">
+            <span class="step-links">
+                {% if post.has_previous %}
+                    <a href="{% url 'newsroom' %}?page=1" style="color: black;">&lt;&lt;</a> &nbsp;
+                    <a href="{% url 'newsroom' %}?page={{ post.previous_page_number }}" style="color: black;">&lt;</a>&nbsp;&nbsp;
+                {% endif %}
+
+                <span class="current">
+                    <a href="#" style="color: black;">{{ post.number }} / {{ post.paginator.num_pages }}</a>&nbsp;&nbsp;
+                </span>
+
+                {% if post.has_next %}
+                    <a href="{% url 'newsroom' %}?page={{ post.next_page_number }}" style="color: black;">&gt;</a>&nbsp;
+                    <a href="{% url 'newsroom' %}?page={{ post.paginator.num_pages }}" style="color: black;">&gt;&gt;</a>
+                {% endif %}
+            </span>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+{% endblock %}

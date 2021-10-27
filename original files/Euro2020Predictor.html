@@ -1,0 +1,3341 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script></head>
+
+<body>
+    <div id="header">
+        <div style="display: flex; justify-content: center;">
+            <img src="EUROLogo.jpeg" style="width: 40%;">
+        </div>
+    
+        <h1 style="font-family: 'Poppins', sans-serif; font-size: 60px; text-align: center; color: white; margin-top: -20px;">Predictor</h1>
+        <br>
+        <h1 style="font-family: 'Poppins', sans-serif; font-size: 45px; text-align: center; color: white;">1, Group Stage</h1>
+        
+    </div>
+
+    <div class="col-flex" id="group-stage">
+        <div style="height: 100px;"></div>
+
+        <div class="row-flex" style="justify-content: center;">
+            <div style="width: 10%;"></div>
+    
+            <div class="row-flex">
+          
+                <div class="col-flex div-group">
+                    <div style="height: 75px; background-color: rgb(165, 75, 147);">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; color: white; margin: 2px 0 0 20px;">Group A</h1>
+                    </div>
+                    <br>
+    
+                    <div style="height: 100px; width: 460px; border-bottom: 2px lightgray solid;">
+                        <div class="row-flex" id="A1">
+                            <div class="number">1</div>
+                            <div id="A1-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="ITA" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Italy.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Italy</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="A2">
+                            <div class="number">2</div>
+                            <div id="A2-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="CHE" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Switzerland.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Switzerland</p>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="A3">
+                            <div class="number">3</div>
+                            <div id="A3-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="TUR" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Turkey.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Turkey</p>                
+                                </div>     
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="gs-div">
+                        <div class="row-flex" id="A4">
+                            <div class="number">4</div>
+                            <div id="A4-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="WLS" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Wales.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Wales</p>                
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+    
+        
+        
+    
+                </div>
+    
+                <div style="width: 150px;"></div>
+    
+                <div class="col-flex div-group">
+                    <div style="height: 75px; background-color: rgb(165, 75, 147);">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; color: white; margin: 2px 0 0 20px;">Group B</h1>
+                    </div>
+                    <br>
+    
+                    <div style="height: 100px; width: 460px; border-bottom: 2px lightgray solid;">
+                        <div class="row-flex" id="B1">
+                            <div class="number">1</div>
+                            <div id="B1-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="BEL" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Belgium.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Belgium</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="B2">
+                            <div class="number">2</div>
+                            <div id="B2-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="DNK" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Denmark.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Denmark</p>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="B3">
+                            <div class="number">3</div>
+                            <div id="B3-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="FIN" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Finland.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Finland</p>                
+                                </div>     
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="gs-div">
+                        <div class="row-flex" id="B4">
+                            <div class="number">4</div>
+                            <div id="B4-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="RUS" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Russia.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Russia</p>                
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+    
+        
+        
+    
+                </div>
+    
+            </div>
+        
+            <div style="width: 10%;"></div>
+    
+        </div>
+
+        <div style="height: 100px;"></div>
+
+        <div class="row-flex" style="justify-content: center;">
+            <div style="width: 10%;"></div>
+      
+            <div class="row-flex">
+          
+                <div class="col-flex div-group">
+                    <div style="height: 75px; background-color: rgb(165, 75, 147);">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; color: white; margin: 2px 0 0 20px;">Group C</h1>
+                    </div>
+                    <br>
+    
+                    <div style="height: 100px; width: 460px; border-bottom: 2px lightgray solid;">
+                        <div class="row-flex" id="C1">
+                            <div class="number">1</div>
+                            <div id="C1-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="AUT" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Austria.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Austria</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="C2">
+                            <div class="number">2</div>
+                            <div id="C2-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="NLD" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Netherlands.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Netherlands</p>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="C3">
+                            <div class="number">3</div>
+                            <div id="C3-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="NMKD" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/N. Macedonia.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">N. Macedonia</p>                
+                                </div>     
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="gs-div">
+                        <div class="row-flex" id="C4">
+                            <div class="number">4</div>
+                            <div id="C4-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="UKR" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Ukraine.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Ukraine</p>                
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+    
+        
+        
+    
+                </div>
+    
+                <div style="width: 150px;"></div>
+    
+                <div class="col-flex div-group">
+                    <div style="height: 75px; background-color: rgb(165, 75, 147);">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; color: white; margin: 2px 0 0 20px;">Group D</h1>
+                    </div>
+                    <br>
+    
+                    <div style="height: 100px; width: 460px; border-bottom: 2px lightgray solid;">
+                        <div class="row-flex" id="D1">
+                            <div class="number">1</div>
+                            <div id="D1-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="HRV" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Croatia.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Croatia</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="D2">
+                            <div class="number">2</div>
+                            <div id="D2-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="CZE" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Czech Rep..jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Czech Rep.</p>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="D3">
+                            <div class="number">3</div>
+                            <div id="D3-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="ENG" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/England.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">England</p>                
+                                </div>     
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="gs-div">
+                        <div class="row-flex" id="D4">
+                            <div class="number">4</div>
+                            <div id="D4-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="SCT" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Scotland.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Scotland</p>                
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+    
+        
+        
+    
+                </div>
+    
+            </div>
+        
+            <div style="width: 10%;"></div>
+    
+        </div>
+
+        <div style="height: 100px;"></div>
+
+        <div class="row-flex" style="justify-content: center;">
+            <div style="width: 10%;"></div>
+    
+            <div class="row-flex">
+          
+                <div class="col-flex div-group">
+                    <div style="height: 75px; background-color: rgb(165, 75, 147);">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; color: white; margin: 2px 0 0 20px;">Group E</h1>
+                    </div>
+                    <br>
+    
+                    <div style="height: 100px; width: 460px; border-bottom: 2px lightgray solid;">
+                        <div class="row-flex" id="E1">
+                            <div class="number">1</div>
+                            <div id="E1-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="POL" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Poland.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Poland</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="E2">
+                            <div class="number">2</div>
+                            <div id="E2-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="SVK" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Slovakia.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Slovakia</p>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="E3">
+                            <div class="number">3</div>
+                            <div id="E3-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="ESP" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Spain.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Spain</p>                
+                                </div>     
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="gs-div">
+                        <div class="row-flex" id="E4">
+                            <div class="number">4</div>
+                            <div id="E4-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="SWE" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Sweden.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Sweden</p>                
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+    
+        
+        
+    
+                </div>
+    
+                <div style="width: 150px;"></div>
+    
+                <div class="col-flex div-group">
+                    <div style="height: 75px; background-color: rgb(165, 75, 147);">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; color: white; margin: 2px 0 0 20px;">Group A</h1>
+                    </div>
+                    <br>
+    
+                    <div style="height: 100px; width: 460px; border-bottom: 2px lightgray solid;">
+                        <div class="row-flex" id="F1">
+                            <div class="number">1</div>
+                            <div id="F1-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="FRA" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/France.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">France</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="F2">
+                            <div class="number">2</div>
+                            <div id="F2-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="DEU" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Germany.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Germany</p>                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="gs-div gs-div-border">
+                        <div class="row-flex" id="F3">
+                            <div class="number">3</div>
+                            <div id="F3-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="HUN" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Hungary.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Hungary</p>                
+                                </div>     
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="gs-div">
+                        <div class="row-flex" id="F4">
+                            <div class="number">4</div>
+                            <div id="F4-drop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div id="PRT" draggable="true" ondragstart="drag(event)" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Portugal.jpg" class="gs-images" alt="">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="country">Portugal</p>                
+                                </div> 
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+    
+        
+        
+    
+                </div>
+    
+            </div>
+        
+            <div style="width: 10%;"></div>
+    
+        </div>  
+        
+        <div>
+            <div style="height: 100px;"></div>
+            <div class="row-flex" style="justify-content: center;">
+                <button  id="continue2bft" onclick="bestfourthird()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Continue</button>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <div id="bft" style="display: none;">
+        <div style="height: 200px;"></div>
+
+        <div class="row-flex" style="justify-content: center;">
+            <div>
+                <h1 style="font-family: 'Poppins', sans-serif; font-size: 45px; text-align: center; color: white;">2, Best Four Third Places</h1>        
+                <div style="height: 100px;"></div>
+                <div class="col-flex div-group" style="width: 600px;">
+                    <div style="height: 75px; background-color: rgb(165, 75, 147);">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; color: white; margin-top: 2px; text-align: center;">Choose Yours</h1>
+                    </div>
+                    <br>
+    
+                    <div class="gs-div-border">
+                        <div class="row-flex" id="BFT1">
+                            <div>
+                                <div id="ITA" class="row-flex">
+                                    <div style="width: 40px;"></div>
+                                    <div class="col-flex">
+                                        <div style="height: 25%;"></div>
+                                        <button class="btn btn-outline-success" style="height: 50%; width: 100px;" onclick="select(1)" id="BFT1-B">Select</button>
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="gs-images" alt="" id="BFT1-I">
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <p class="country" id="BFT1-C">Default</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+                    <div class="gs-div-border">
+                        <div class="row-flex" id="BFT1">
+                            <div>
+                                <div id="ITA" class="row-flex">
+                                    <div style="width: 40px;"></div>
+                                    <div class="col-flex">
+                                        <div style="height: 25%;"></div>
+                                        <button class="btn btn-outline-success" style="height: 50%; width: 100px;" onclick="select(2)" id="BFT2-B">Select</button>
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="gs-images" alt="" id="BFT2-I">
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <p class="country" id="BFT2-C">Default</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+                    <div class="gs-div-border">
+                        <div class="row-flex" id="BFT1">
+                            <div>
+                                <div id="ITA" class="row-flex">
+                                    <div style="width: 40px;"></div>
+                                    <div class="col-flex">
+                                        <div style="height: 25%;"></div>
+                                        <button class="btn btn-outline-success" style="height: 50%; width: 100px;" onclick="select(3)" id="BFT3-B">Select</button>
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="gs-images" alt="" id="BFT3-I">
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <p class="country" id="BFT3-C">Default</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div class="gs-div-border">
+                        <div class="row-flex" id="BFT1">
+                            <div>
+                                <div id="ITA" class="row-flex">
+                                    <div style="width: 40px;"></div>
+                                    <div class="col-flex">
+                                        <div style="height: 25%;"></div>
+                                        <button class="btn btn-outline-success" style="height: 50%; width: 100px;" onclick="select(4)" id="BFT4-B">Select</button>
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="gs-images" alt="" id="BFT4-I">
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <p class="country" id="BFT4-C">Default</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div class="gs-div-border">
+                        <div class="row-flex" id="BFT1">
+                            <div>
+                                <div id="ITA" class="row-flex">
+                                    <div style="width: 40px;"></div>
+                                    <div class="col-flex">
+                                        <div style="height: 25%;"></div>
+                                        <button class="btn btn-outline-success" style="height: 50%; width: 100px;" onclick="select(5)" id="BFT5-B">Select</button>
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="gs-images" alt="" id="BFT5-I">
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <p class="country" id="BFT5-C">Default</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div>
+                        <div class="row-flex" id="BFT1">
+                            <div>
+                                <div id="ITA" class="row-flex">
+                                    <div style="width: 40px;"></div>
+                                    <div class="col-flex">
+                                        <div style="height: 25%;"></div>
+                                        <button class="btn btn-outline-success" style="height: 50%; width: 100px;" onclick="select(6)" id="BFT6-B">Select</button>
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="gs-images" alt="" id="BFT6-I">
+                                    </div>
+                                    <div style="width: 40px;"></div>
+                                    <p class="country" id="BFT6-C">Default</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+        
+    
+        
+        
+    
+                </div>
+    
+            </div>
+        </div>
+
+        <div>
+            <div style="height: 100px;"></div>
+            <div class="row-flex" style="justify-content: center;">
+                <button id="continue2ks" onclick="continue2ks()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Continue</button>
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- 736, 1545, 1546 -->
+
+    <div id="knockout" style="display: none;">
+        <div style="height: 200px;"></div>
+        <h1 style="font-family: 'Poppins', sans-serif; font-size: 45px; text-align: center; color: white;">3, Knockout Stage</h1>        
+        <div style="height: 100px;"></div>
+
+        <div class="row-flex">
+            <div style="width: 10%;"></div>
+            <div style="width: 29%;" id="ko1">
+                <div id="ko1-choosing" style="display: block;">
+                    <div class="col-flex div-ko1">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-A1-S" onclick="select_ks16(1)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-A1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-A1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-A2-S" onclick="select_ks16(2)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-A2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-A2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-ko1">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-B1-S" onclick="select_ks16(3)" >O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-B1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-B1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-B2-S" onclick="select_ks16(4)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-B2-I"> 
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-B2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-ko1">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-C1-S" onclick="select_ks16(5)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-C1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-C1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-C2-S" onclick="select_ks16(6)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-C2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-C2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-ko1">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-D1-S" onclick="select_ks16(7)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-D1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-D1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-D2-S" onclick="select_ks16(8)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-D2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-D2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-ko1">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-E1-S" onclick="select_ks16(9)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-E1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-E1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-E2-S" onclick="select_ks16(10)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-E2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-E2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-ko1">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-F1-S" onclick="select_ks16(11)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-F1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-F1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-F2-S" onclick="select_ks16(12)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-F2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-F2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-ko1">
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-G1-S" onclick="select_ks16(13)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-G1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-G1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-G2-S" onclick="select_ks16(14)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-G2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-G2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-ko1">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-H1-S" onclick="select_ks16(15)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-H1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-H1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" id="R16-H2-S" onclick="select_ks16(16)">O</button>
+                                <div style="width: 5%;"></div>
+
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R16-H2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R16-H2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 50px;"></div>
+
+                    <div>
+                        <div class="row-flex" style="justify-content: center;">
+                            <button id="continue2r8" onclick="continue2r8()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Continue</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="display: none;" id="ko1-chosen">
+                    <div class="col-flex div-group">    
+                        <div class="knockout-style ks-wl" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-A-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-A-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style ks-wl">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-B-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-B-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-group">    
+                        <div class="knockout-style ks-wl" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-C-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-C-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style ks-wl">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-D-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-D-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-group">    
+                        <div class="knockout-style ks-wl" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-E-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-E-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style ks-wl">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-F-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-F-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-group">    
+                        <div class="knockout-style ks-wl" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-G-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-G-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style ks-wl">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-H-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-H-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 50px;"></div>
+
+                    <div>
+                        <div class="row-flex" style="justify-content: center;">
+                            <button id="back2r16" onclick="back2r16()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Back</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="width: 1.5%;"></div>
+            <div style="width: 29%; display: none;" id="ko2">
+                <div id="ko2-choosing" style="display: block;">
+                    <div class="col-flex div-ko2">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R8-A1-S" onclick="select_ks8(1)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R8-A1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R8-A1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R8-A2-S" onclick="select_ks8(2)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R8-A2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R8-A2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+    
+                    <div style="height: 20px;"></div>
+    
+                    <div class="col-flex div-ko2">
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R8-B1-S" onclick="select_ks8(3)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R8-B1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R8-B1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R8-B2-S" onclick="select_ks8(4)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R8-B2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R8-B2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+    
+                    <div style="height: 20px;"></div>
+    
+                    <div class="col-flex div-ko2">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R8-C1-S" onclick="select_ks8(5)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R8-C1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R8-C1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R8-C2-S" onclick="select_ks8(6)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R8-C2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R8-C2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+    
+                    <div style="height: 20px;"></div>
+    
+                    <div class="col-flex div-ko2">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R8-D1-S" onclick="select_ks8(7)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R8-D1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R8-D1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R8-D2-S" onclick="select_ks8(8)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R8-D2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R8-D2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+    
+                    <div style="height: 50px;"></div>
+    
+                    <div>
+                        <div class="row-flex" style="justify-content: center;">
+                            <button id="continue2r4" onclick="continue2r4()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Continue</button>
+                        </div>
+                    </div>
+    
+    
+
+                </div>
+
+                <div id="ko2-chosen" style="display: none;">
+                    <div class="col-flex div-group">    
+                        <div class="knockout-style ks-wl" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-A-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-A-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style ks-wl">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-B-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-B-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="col-flex div-group">    
+                        <div class="knockout-style ks-wl" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-C-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-C-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style ks-wl">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-D-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-D-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 50px;"></div>
+
+                    <div>
+                        <div class="row-flex" style="justify-content: center;">
+                            <button id="back2r8" onclick="back2r8()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Back</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div style="width: 1.5%;"></div>
+            <div style="width: 29%; display: none;" id="ko3"> 
+                <div id="ko3-choosing" style="display: block;">
+                    <div class="col-flex div-ko3">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R4-A1-S" onclick="select_semi(1)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R4-A1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R4-A1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R4-A2-S" onclick="select_semi(2)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R4-A2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R4-A2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+    
+                    <div style="height: 20px;"></div>
+    
+                    <div class="col-flex div-ko3">    
+                        <div class="knockout-style" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R4-B1-S" onclick="select_semi(3)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R4-B1-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R4-B1-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style">
+                            <div class="row-flex">
+                                <div style="width: 4%;"></div>
+                                <button class="btn btn-outline-success ks16-btn" style="height: 40px; margin-top: 20px;" id="R4-B2-S" onclick="select_semi(4)">O</button>
+                                <div style="width: 5%;"></div>
+    
+                                <div>
+                                    <div class="row-flex">
+                                        <div>
+                                            <div style="height: 10px;"></div>
+                                            <img src="nations/Default.jpg" class="knockout-images" alt="" id="R4-B2-I">
+                                        </div>
+                                        <div style="width: 20px;"></div>
+                                        <p class="knockout-country" id="R4-B2-C">Default</p>                
+                                    </div> 
+                                </div>
+            
+                            </div>           
+                        </div>
+                    </div>
+    
+                    <div style="height: 50px;"></div>
+    
+                    <div>
+                        <div class="row-flex" style="justify-content: center;">
+                            <button id="continue2final" onclick="continue2final()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Continue</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ko3-chosen" style="display: none;">
+                    <div class="col-flex div-group">    
+                        <div class="knockout-style ks-wl" style="border-bottom: 2px lightgray solid;">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R4-A-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R4-A-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+            
+                        <div class="knockout-style ks-wl">
+                            <div class="row-flex">
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R4-B-L"> 
+                                    </div>
+                                </div>
+                                <div style="width: 50%; justify-content: center;" class="row-flex">
+                                    <div>
+                                        <div style="height: 10px;"></div>
+                                        <img src="nations/Default.jpg" class="knockout-images round-flag" alt="" id="R4-B-W"> 
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+
+                    <div style="height: 50px;"></div>
+
+                    <div>
+                        <div class="row-flex" style="justify-content: center;">
+                            <button id="back2r4" onclick="back2r4()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Back</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div style="width: 10%;"></div>
+
+        </div>
+
+
+    </div>
+
+
+    <div id="final" style="display: none;">
+        <div style="height: 200px;"></div>
+        <h1 style="font-family: 'Poppins', sans-serif; font-size: 45px; text-align: center; color: white;">4, Final</h1> 
+        <div style="height: 100px;"></div>
+        <div class="row-flex">
+            <div style="width: 10%"></div>
+            <div class="row-flex final-div" style="justify-content: center; background-color: white; height: 500px; width: 80%; border: 20px rgb(214, 175, 54) solid; border-radius: 200px;">
+                
+                <div style="width: 50%; text-align: center; border-radius: 180px 0 0 180px;" id="final-left-div" onclick="select_final(1)">
+                    <div style="height: 15%;"></div>
+                    <img src="./nations/Default.jpg" alt="" style="border-radius: 50%; height: 200px; width: 200px;" id="F-L-I">
+                    <div style="height: 10px;"></div>
+                    <h1 class="country" style="font-size: 40px; text-align: center;" id="F-L-C">Default</h1>
+                </div>
+                
+                <div style="width: 50%; text-align: center; border-radius: 0 180px 180px 0;" id="final-right-div" onclick="select_final(2)">
+                    <div style="height: 15%;"></div>
+                    <img src="./nations/Default.jpg" alt="" style="border-radius: 50%; height: 200px; width: 200px;" id="F-R-I">
+                    <div style="height: 10px;"></div>
+                    <h1 class="country" style="font-size: 40px; text-align: center;" id="F-R-C">Default</h1>
+                </div>
+    
+            </div> 
+        </div>
+
+        <div style="height: 80px;"></div>
+        <div>
+            <div class="row-flex" style="justify-content: center;">
+                <button id="over" onclick="over()" class="btn btn-warning" style="height: 60px; width: 180px; font-size: 24px;">Continue</button>
+                <button id="back2final" onclick="back2final()" class="btn btn-warning" style="height: 60px; width: 180px; font-size: 24px; display: none;">Back</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="result" style="display: none;">
+        <div style="height: 200px;"></div>
+        <h1 style="font-family: 'Poppins', sans-serif; font-size: 45px; text-align: center; color: white;">Your European Champion</h1> 
+        <div style="height: 80px;"></div>
+        <div class="col-flex">
+            <div class="row-flex" style="justify-content: center;">
+                <img src="./nations/Default.jpg" alt="" style="border-radius: 50%; height: 300px; width: 300px;" id="winner-I">
+            </div>
+            <div style="height: 50px;"></div>
+            <div class="row-flex" style="justify-content: center;">
+                <h1 class="country" style="color: white; font-size: 55px;" id="winner-C">Default</h1>
+            </div>
+
+            <div style="height: 80px;"></div>
+            <div>
+                <div class="row-flex" style="justify-content: center;">
+                    <button onclick="save()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Save</button>
+                </div>
+            </div>
+    
+    
+        </div>
+
+    </div>
+
+    <div style="height: 400px;"></div>
+
+
+
+        
+
+    <script>
+        function allowDrop(ev) 
+        {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) 
+        {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) 
+        {
+            ev.preventDefault ();
+            var src = document.getElementById (ev.dataTransfer.getData("text"));
+            var srcParent = src.parentNode;
+            var tgt = ev.currentTarget.firstElementChild;
+
+            ev.currentTarget.replaceChild (src, tgt);
+            srcParent.appendChild (tgt);
+        }
+
+        function bestfourthird()
+        {
+            var a3 = document.getElementById('A3').children[1].children[0].children[2].innerHTML;
+            var b3 = document.getElementById('B3').children[1].children[0].children[2].innerHTML;
+            var c3 = document.getElementById('C3').children[1].children[0].children[2].innerHTML;
+            var d3 = document.getElementById('D3').children[1].children[0].children[2].innerHTML;
+            var e3 = document.getElementById('E3').children[1].children[0].children[2].innerHTML;
+            var f3 = document.getElementById('F3').children[1].children[0].children[2].innerHTML;
+
+            var BFT1_C = document.getElementById('BFT1-C');
+            var BFT2_C = document.getElementById('BFT2-C');
+            var BFT3_C = document.getElementById('BFT3-C');
+            var BFT4_C = document.getElementById('BFT4-C');
+            var BFT5_C = document.getElementById('BFT5-C');
+            var BFT6_C = document.getElementById('BFT6-C');
+
+            var BFT1_I = document.getElementById('BFT1-I');
+            var BFT2_I = document.getElementById('BFT2-I');
+            var BFT3_I = document.getElementById('BFT3-I');
+            var BFT4_I = document.getElementById('BFT4-I');
+            var BFT5_I = document.getElementById('BFT5-I');
+            var BFT6_I = document.getElementById('BFT6-I');
+
+            BFT1_C.innerHTML = a3;
+            BFT2_C.innerHTML = b3;
+            BFT3_C.innerHTML = c3;
+            BFT4_C.innerHTML = d3;
+            BFT5_C.innerHTML = e3;
+            BFT6_C.innerHTML = f3;
+
+
+            BFT1_I.src = './nations/' + a3 + '.jpg';
+            BFT2_I.src = './nations/' + b3 + '.jpg';
+            BFT3_I.src = './nations/' + c3 + '.jpg';
+            BFT4_I.src = './nations/' + d3 + '.jpg';
+            BFT5_I.src = './nations/' + e3 + '.jpg';
+            BFT6_I.src = './nations/' + f3 + '.jpg';
+
+            
+
+
+            // 1, Lock all dragables; 2, get all Top 3s.
+            var c2bft = document.getElementById('continue2bft');
+            c2bft.innerHTML = 'Back';
+            c2bft.onclick = back2gs;
+            document.getElementById('bft').style.display = 'block';
+            changedraganddrop(0); // 0: Cancel 1: Equip
+        }
+
+        function back2gs()
+        {
+            var c2bft = document.getElementById('continue2bft');
+            c2bft.innerHTML = 'Continue';
+            c2bft.onclick = bestfourthird;
+            document.getElementById('bft').style.display = 'none';
+            changedraganddrop(1); // 0: Cancel 1: Equip
+
+        }
+
+        function select(id)
+        {
+            var BTF1 = document.getElementById('BFT1-B');
+            var BTF2 = document.getElementById('BFT2-B');
+            var BTF3 = document.getElementById('BFT3-B');
+            var BTF4 = document.getElementById('BFT4-B');
+            var BTF5 = document.getElementById('BFT5-B');
+            var BTF6 = document.getElementById('BFT6-B');
+
+            if(id == 1){ var change_ele = BTF1; }
+            else if(id == 2){ var change_ele = BTF2; }
+            else if(id == 3){ var change_ele = BTF3; }
+            else if(id == 4){ var change_ele = BTF4; }
+            else if(id == 5){ var change_ele = BTF5; }
+            else if(id == 6){ var change_ele = BTF6; }
+
+            if (change_ele.innerHTML == 'Select')
+            {
+                let check = [BTF1, BTF2, BTF3, BTF4, BTF5, BTF6];
+                var count = 0;
+
+                check.forEach((item) => {
+                    if (item.innerHTML == 'Deselect')
+                    {
+                        count += 1;
+                    }
+                })
+
+                if (count >= 4)
+                {
+                    alert('You can only select four best thirds!');
+                    return;
+                }
+                else
+                {
+                    change_ele.innerHTML = 'Deselect';
+                    change_ele.className = 'btn btn-success';
+                }
+            }
+            else
+            {
+                change_ele.innerHTML = 'Select';
+                change_ele.className = 'btn btn-outline-success';
+            }
+
+
+        }
+
+        function changedraganddrop(id)
+        {
+            var A1_drop = document.getElementById('A1-drop');
+            var ITA = document.getElementById('ITA');
+            var A2_drop = document.getElementById('A2-drop');
+            var CHE = document.getElementById('CHE');
+            var A3_drop = document.getElementById('A3-drop');
+            var TUR = document.getElementById('TUR');
+            var A4_drop = document.getElementById('A4-drop');
+            var WLS = document.getElementById('WLS');
+
+            var B1_drop = document.getElementById('B1-drop');
+            var BEL = document.getElementById('BEL');
+            var B2_drop = document.getElementById('B2-drop');
+            var DNK = document.getElementById('DNK');
+            var B3_drop = document.getElementById('B3-drop');
+            var FIN = document.getElementById('FIN');
+            var B4_drop = document.getElementById('B4-drop');
+            var RUS = document.getElementById('RUS');
+
+            var C1_drop = document.getElementById('C1-drop');
+            var AUT = document.getElementById('AUT');
+            var C2_drop = document.getElementById('C2-drop');
+            var NLD = document.getElementById('NLD');
+            var C3_drop = document.getElementById('C3-drop');
+            var NMKD = document.getElementById('NMKD');
+            var C4_drop = document.getElementById('C4-drop');
+            var UKR = document.getElementById('UKR');
+
+            var D1_drop = document.getElementById('D1-drop');
+            var HRV = document.getElementById('HRV');
+            var D2_drop = document.getElementById('D2-drop');
+            var CZE = document.getElementById('CZE');
+            var D3_drop = document.getElementById('D3-drop');
+            var ENG = document.getElementById('ENG');
+            var D4_drop = document.getElementById('D4-drop');
+            var SCT = document.getElementById('SCT');
+
+            var E1_drop = document.getElementById('E1-drop');
+            var POL = document.getElementById('POL');
+            var E2_drop = document.getElementById('E2-drop');
+            var SVK = document.getElementById('SVK');
+            var E3_drop = document.getElementById('E3-drop');
+            var ESP = document.getElementById('ESP');
+            var E4_drop = document.getElementById('E4-drop');
+            var SWE = document.getElementById('SWE');
+
+            var F1_drop = document.getElementById('F1-drop');
+            var FRA = document.getElementById('FRA');
+            var F2_drop = document.getElementById('F2-drop');
+            var DEU = document.getElementById('DEU');
+            var F3_drop = document.getElementById('F3-drop');
+            var HUN = document.getElementById('HUN');
+            var F4_drop = document.getElementById('F4-drop');
+            var PRT = document.getElementById('PRT');
+
+            let drop_menu = [A1_drop, A2_drop, A3_drop, A4_drop, B1_drop, B2_drop, B3_drop, B4_drop, C1_drop, C2_drop, C3_drop, C4_drop, D1_drop, D2_drop, D3_drop, D4_drop, E1_drop, E2_drop, E3_drop, E4_drop, F1_drop, F2_drop, F3_drop, F4_drop];
+            let drag_menu = [ITA, CHE, TUR, WLS, BEL, DNK, FIN, RUS, AUT, NLD, NMKD, UKR, HRV, CZE, ENG, SCT, POL, SVK, ESP, SWE, FRA, DEU, HUN, PRT];
+
+            if (id == 0)
+            {
+                drop_menu.forEach((item) => {
+                    item.removeAttribute('ondrop')
+                    item.removeAttribute('ondragover')
+
+                })
+
+                drag_menu.forEach((item) => {
+                    item.setAttribute('draggable', false);
+                    item.removeAttribute('ondragstart')
+
+                })
+            }
+            else if (id == 1)
+            {
+                drop_menu.forEach((item) => {
+                    item.setAttribute('ondrop', 'drop(event)');
+                    item.setAttribute('ondragover', 'allowDrop(event)');
+                })
+
+                drag_menu.forEach((item) => {
+                    item.setAttribute('draggable', true);
+                    item.setAttribute('ondragstart', 'drag(event)');
+                })
+
+
+            }
+        }
+
+        function continue2ks()
+        {
+            var BTF1 = document.getElementById('BFT1-B');
+            var BTF2 = document.getElementById('BFT2-B');
+            var BTF3 = document.getElementById('BFT3-B');
+            var BTF4 = document.getElementById('BFT4-B');
+            var BTF5 = document.getElementById('BFT5-B');
+            var BTF6 = document.getElementById('BFT6-B');
+
+            let check = [BTF1, BTF2, BTF3, BTF4, BTF5, BTF6];
+            var count = 0;
+            var num = 1
+            var whichone = []
+            check.forEach((item) => {
+                if (item.innerHTML == 'Deselect')
+                {
+                    count += 1;
+                    whichone.push(num);
+                }
+                num += 1;
+            })
+
+            whichone.forEach((item) => {
+                console.log(item);
+            })
+
+            if (count != 4)
+            {
+                alert('You must select four best thirds!');
+                return;
+            }
+            else
+            {
+                var c2ks = document.getElementById('continue2ks');
+                c2ks.innerHTML = 'Back';
+                c2ks.onclick = back2bft;
+                document.getElementById('knockout').style.display = 'block';
+
+                var c2bft = document.getElementById('continue2bft');
+                c2bft.style.display = 'none';
+
+                check.forEach((item) => {
+                    item.onclick = null;
+                })
+
+                var a1 = document.getElementById('A1').children[1].children[0].children[2].innerHTML;
+                var a2 = document.getElementById('A2').children[1].children[0].children[2].innerHTML;
+                var b1 = document.getElementById('B1').children[1].children[0].children[2].innerHTML;
+                var b2 = document.getElementById('B2').children[1].children[0].children[2].innerHTML;
+                var c1 = document.getElementById('C1').children[1].children[0].children[2].innerHTML;
+                var c2 = document.getElementById('C2').children[1].children[0].children[2].innerHTML;
+                var d1 = document.getElementById('D1').children[1].children[0].children[2].innerHTML;
+                var d2 = document.getElementById('D2').children[1].children[0].children[2].innerHTML;
+                var e1 = document.getElementById('E1').children[1].children[0].children[2].innerHTML;
+                var e2 = document.getElementById('E2').children[1].children[0].children[2].innerHTML;
+                var f1 = document.getElementById('F1').children[1].children[0].children[2].innerHTML;
+                var f2 = document.getElementById('F2').children[1].children[0].children[2].innerHTML;
+                var R16_A1_C = document.getElementById('R16-A1-C');
+                var R16_A2_C = document.getElementById('R16-A2-C');
+                var R16_B1_C = document.getElementById('R16-B1-C');
+                var R16_B2_C = document.getElementById('R16-B2-C');
+                var R16_C1_C = document.getElementById('R16-C1-C');
+                var R16_C2_C = document.getElementById('R16-C2-C');
+                var R16_D1_C = document.getElementById('R16-D1-C');
+                var R16_D2_C = document.getElementById('R16-D2-C');
+                var R16_E1_C = document.getElementById('R16-E1-C');
+                var R16_E2_C = document.getElementById('R16-E2-C');
+                var R16_F1_C = document.getElementById('R16-F1-C');
+                var R16_F2_C = document.getElementById('R16-F2-C');
+                var R16_G1_C = document.getElementById('R16-G1-C');
+                var R16_G2_C = document.getElementById('R16-G2-C');
+                var R16_H1_C = document.getElementById('R16-H1-C');
+                var R16_H2_C = document.getElementById('R16-H2-C');
+                var R16_A1_I = document.getElementById('R16-A1-I');
+                var R16_A2_I = document.getElementById('R16-A2-I');
+                var R16_B1_I = document.getElementById('R16-B1-I');
+                var R16_B2_I = document.getElementById('R16-B2-I');
+                var R16_C1_I = document.getElementById('R16-C1-I');
+                var R16_C2_I = document.getElementById('R16-C2-I');
+                var R16_D1_I = document.getElementById('R16-D1-I');
+                var R16_D2_I = document.getElementById('R16-D2-I');
+                var R16_E1_I = document.getElementById('R16-E1-I');
+                var R16_E2_I = document.getElementById('R16-E2-I');
+                var R16_F1_I = document.getElementById('R16-F1-I');
+                var R16_F2_I = document.getElementById('R16-F2-I');
+                var R16_G1_I = document.getElementById('R16-G1-I');
+                var R16_G2_I = document.getElementById('R16-G2-I');
+                var R16_H1_I = document.getElementById('R16-H1-I');
+                var R16_H2_I = document.getElementById('R16-H2-I');
+                R16_A1_C.innerHTML = b1; R16_A1_I.src = './nations/'.concat(b1).concat('.jpg');
+                R16_B1_C.innerHTML = a1; R16_B1_I.src = './nations/'.concat(a1).concat('.jpg');
+                R16_B2_C.innerHTML = c2; R16_B2_I.src = './nations/'.concat(c2).concat('.jpg');
+                R16_C1_C.innerHTML = f1; R16_C1_I.src = './nations/'.concat(f1).concat('.jpg');
+                R16_D1_C.innerHTML = d2; R16_D1_I.src = './nations/'.concat(d2).concat('.jpg');
+                R16_D2_C.innerHTML = e2; R16_D2_I.src = './nations/'.concat(e2).concat('.jpg');
+                R16_E1_C.innerHTML = e1; R16_E1_I.src = './nations/'.concat(e1).concat('.jpg');
+                R16_F1_C.innerHTML = d1; R16_F1_I.src = './nations/'.concat(d1).concat('.jpg');
+                R16_F2_C.innerHTML = f2; R16_F2_I.src = './nations/'.concat(f2).concat('.jpg');
+                R16_G1_C.innerHTML = c1; R16_G1_I.src = './nations/'.concat(c1).concat('.jpg');
+                R16_H1_C.innerHTML = a2; R16_H1_I.src = './nations/'.concat(a2).concat('.jpg');
+                R16_H2_C.innerHTML = b2; R16_H2_I.src = './nations/'.concat(b2).concat('.jpg');
+                // R16_A2 unknown (oppo: B1)
+                // R16_C2 unknown (oppo: F1)
+                // R16_E2 unknown (oppo: E1)
+                // R16_G2 unknown (oppo: C1)
+
+                var a3 = document.getElementById('A3').children[1].children[0].children[2].innerHTML;
+                var b3 = document.getElementById('B3').children[1].children[0].children[2].innerHTML;
+                var c3 = document.getElementById('C3').children[1].children[0].children[2].innerHTML;
+                var d3 = document.getElementById('D3').children[1].children[0].children[2].innerHTML;
+                var e3 = document.getElementById('E3').children[1].children[0].children[2].innerHTML;
+                var f3 = document.getElementById('F3').children[1].children[0].children[2].innerHTML;
+
+                
+                if (whichone[0] == 1) // A
+                {
+                    if (whichone[1] == 2) // A B
+                    {
+                        if (whichone[2] == 3) // A B C
+                        {
+                            R16_A2_C.innerHTML = a3; R16_A2_I.src = './nations/'.concat(a3).concat('.jpg'); // B1
+                            R16_C2_C.innerHTML = c3; R16_C2_I.src = './nations/'.concat(c3).concat('.jpg'); // F1
+                            R16_E2_C.innerHTML = b3; R16_E2_I.src = './nations/'.concat(b3).concat('.jpg'); // E1
+                            if (whichone[3] == 4) // A B C D
+                            {
+                                R16_G2_C.innerHTML = d3; R16_G2_I.src = './nations/'.concat(d3).concat('.jpg'); // C1
+                            }
+                            else if (whichone[3] == 5) // A B C E
+                            {
+                                R16_G2_C.innerHTML = e3; R16_G2_I.src = './nations/'.concat(e3).concat('.jpg'); // C1
+                            }
+                            else if (whichone[3] == 5) // A B C F
+                            {
+                                R16_G2_C.innerHTML = f3; R16_G2_I.src = './nations/'.concat(f3).concat('.jpg'); // C1
+                            }
+                        }
+                        else if (whichone[2] == 4) // A B D
+                        {
+                            R16_A2_C.innerHTML = d3; R16_A2_I.src = './nations/'.concat(d3).concat('.jpg'); // B1
+                            R16_C2_C.innerHTML = b3; R16_C2_I.src = './nations/'.concat(b3).concat('.jpg'); // F1
+                            R16_E2_C.innerHTML = a3; R16_E2_I.src = './nations/'.concat(a3).concat('.jpg'); // E1
+                            if (whichone[3] == 5) // A B D E
+                            {
+                                R16_G2_C.innerHTML = e3; R16_G2_I.src = './nations/'.concat(e3).concat('.jpg'); // C1
+                            }
+                            else if (whichone[3] == 6) // A B D F
+                            {
+                                R16_G2_C.innerHTML = f3; R16_G2_I.src = './nations/'.concat(f3).concat('.jpg'); // C1
+                            }
+                        }
+                        else if (whichone[2] == 5) // A B E (F)
+                        {
+                            R16_A2_C.innerHTML = e3; R16_A2_I.src = './nations/'.concat(e3).concat('.jpg'); // B1
+                            R16_C2_C.innerHTML = a3; R16_C2_I.src = './nations/'.concat(a3).concat('.jpg'); // F1
+                            R16_E2_C.innerHTML = b3; R16_E2_I.src = './nations/'.concat(b3).concat('.jpg'); // E1
+                            R16_G2_C.innerHTML = f3; R16_G2_I.src = './nations/'.concat(f3).concat('.jpg'); // C1
+                        }
+                    }
+                    else if (whichone[1] == 3) // A C
+                    {
+                        R16_C2_C.innerHTML = a3; R16_C2_I.src = './nations/'.concat(a3).concat('.jpg'); // F1
+                        R16_E2_C.innerHTML = c3; R16_E2_I.src = './nations/'.concat(c3).concat('.jpg'); // E1
+                        if (whichone[2] == 4) // A C D
+                        {
+                            R16_G2_C.innerHTML = d3; R16_G2_I.src = './nations/'.concat(d3).concat('.jpg'); // C1
+                            if (whichone[3] == 5) // A C D E
+                            {
+                                R16_A2_C.innerHTML = e3; R16_A2_I.src = './nations/'.concat(e3).concat('.jpg'); // B1
+                            }
+                            else if (whichone[3] == 6) // A C D F
+                            {
+                                R16_A2_C.innerHTML = f3; R16_A2_I.src = './nations/'.concat(f3).concat('.jpg'); // B1
+                            }
+                        }
+                        else if (whichone[2] == 5) // A C E (F)
+                        {
+                            R16_G2_C.innerHTML = f3; R16_G2_I.src = './nations/'.concat(f3).concat('.jpg'); // C1
+                            R16_A2_C.innerHTML = e3; R16_A2_I.src = './nations/'.concat(e3).concat('.jpg'); // B1
+                        }
+                    }
+                    else if (whichone[1] == 4) // A D (E) (F)
+                    {
+                        R16_A2_C.innerHTML = e3; R16_A2_I.src = './nations/'.concat(e3).concat('.jpg'); // B1
+                        R16_C2_C.innerHTML = a3; R16_C2_I.src = './nations/'.concat(a3).concat('.jpg'); // F1
+                        R16_E2_C.innerHTML = d3; R16_E2_I.src = './nations/'.concat(d3).concat('.jpg'); // E1
+                        R16_G2_C.innerHTML = f3; R16_G2_I.src = './nations/'.concat(f3).concat('.jpg'); // C1
+                    }
+                }
+                else if (whichone[0] == 2) // B
+                {
+                    if (whichone[1] == 3) // B C
+                    {
+                        if (whichone[2] == 4) // B C D
+                        {
+                            if (whichone[3] == 5) // B C D E
+                            {
+                                R16_A2_C.innerHTML = e3; R16_A2_I.src = './nations/'.concat(e3).concat('.jpg'); // B1
+                                R16_C2_C.innerHTML = c3; R16_C2_I.src = './nations/'.concat(c3).concat('.jpg'); // F1
+                                R16_E2_C.innerHTML = b3; R16_E2_I.src = './nations/'.concat(b3).concat('.jpg'); // E1
+                                R16_G2_C.innerHTML = d3; R16_G2_I.src = './nations/'.concat(d3).concat('.jpg'); // C1
+
+                            }
+                            else if (whichone[3] == 6) // B C D F
+                            {
+                                R16_A2_C.innerHTML = f3; R16_A2_I.src = './nations/'.concat(f3).concat('.jpg'); // B1
+                                R16_C2_C.innerHTML = b3; R16_C2_I.src = './nations/'.concat(b3).concat('.jpg'); // F1
+                                R16_E2_C.innerHTML = c3; R16_E2_I.src = './nations/'.concat(c3).concat('.jpg'); // E1
+                                R16_G2_C.innerHTML = d3; R16_G2_I.src = './nations/'.concat(d3).concat('.jpg'); // C1
+
+                            }
+                        }
+                        else if (whichone[2] == 5) // B C E (F)
+                        {
+                            R16_A2_C.innerHTML = f3; R16_A2_I.src = './nations/'.concat(f3).concat('.jpg'); // B1
+                            R16_C2_C.innerHTML = b3; R16_C2_I.src = './nations/'.concat(b3).concat('.jpg'); // F1
+                            R16_E2_C.innerHTML = c3; R16_E2_I.src = './nations/'.concat(c3).concat('.jpg'); // E1
+                            R16_G2_C.innerHTML = e3; R16_G2_I.src = './nations/'.concat(e3).concat('.jpg'); // C1            
+                        }
+                    }
+                    else if (whichone[1] == 4) // B D (E) (F)
+                    {
+                        R16_A2_C.innerHTML = f3; R16_A2_I.src = './nations/'.concat(f3).concat('.jpg'); // B1
+                        R16_C2_C.innerHTML = b3; R16_C2_I.src = './nations/'.concat(b3).concat('.jpg'); // F1
+                        R16_E2_C.innerHTML = d3; R16_E2_I.src = './nations/'.concat(d3).concat('.jpg'); // E1
+                        R16_G2_C.innerHTML = e3; R16_G2_I.src = './nations/'.concat(e3).concat('.jpg'); // C1
+                    }
+                }
+                else if (whichone[0] == 3) // C (D) (E) (F)
+                {
+                    R16_A2_C.innerHTML = f3; R16_A2_I.src = './nations/'.concat(f3).concat('.jpg'); // B1
+                    R16_C2_C.innerHTML = c3; R16_C2_I.src = './nations/'.concat(c3).concat('.jpg'); // F1
+                    R16_E2_C.innerHTML = d3; R16_E2_I.src = './nations/'.concat(d3).concat('.jpg'); // E1
+                    R16_G2_C.innerHTML = e3; R16_G2_I.src = './nations/'.concat(e3).concat('.jpg'); // C1
+                }
+            }
+        }
+
+        function back2bft()
+        {
+            var c2ks = document.getElementById('continue2ks');
+            c2ks.innerHTML = 'Continue';
+            c2ks.onclick = continue2ks;
+            // Hide Segment
+            document.getElementById('knockout').style.display = 'none';
+            // Allow Seletion
+            var BTF1 = document.getElementById('BFT1-B');
+            var BTF2 = document.getElementById('BFT2-B');
+            var BTF3 = document.getElementById('BFT3-B');
+            var BTF4 = document.getElementById('BFT4-B');
+            var BTF5 = document.getElementById('BFT5-B');
+            var BTF6 = document.getElementById('BFT6-B');
+            let check = [BTF1, BTF2, BTF3, BTF4, BTF5, BTF6];
+            BTF1.setAttribute('onclick', 'select(1)');
+            BTF2.setAttribute('onclick', 'select(2)');
+            BTF3.setAttribute('onclick', 'select(3)');
+            BTF4.setAttribute('onclick', 'select(4)');
+            BTF5.setAttribute('onclick', 'select(5)');
+            BTF6.setAttribute('onclick', 'select(6)');
+            // Show Back Button
+            var c2bft = document.getElementById('continue2bft');
+            c2bft.style.display = 'block';
+        }
+    
+        function select_ks16(id)
+        {
+            if (id == 1 || id == 2)
+            {
+                var R16_A1_S = document.getElementById('R16-A1-S');
+                var R16_A2_S = document.getElementById('R16-A2-S');
+                if (id == 1) 
+                { 
+                    var this_elem = R16_A1_S; 
+                    if (R16_A2_S.innerHTML == 'X')
+                    {
+                        R16_A2_S.innerHTML = 'O';
+                        R16_A2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R16_A2_S; 
+                    if (R16_A1_S.innerHTML == 'X')
+                    {
+                        R16_A1_S.innerHTML = 'O';
+                        R16_A1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 3 || id == 4)
+            {
+                var R16_B1_S = document.getElementById('R16-B1-S');
+                var R16_B2_S = document.getElementById('R16-B2-S');
+                if (id == 3)
+                { 
+                    var this_elem = R16_B1_S; 
+                    if (R16_B2_S.innerHTML == 'X')
+                    {
+                        R16_B2_S.innerHTML = 'O';
+                        R16_B2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R16_B2_S; 
+                    if (R16_B1_S.innerHTML == 'X')
+                    {
+                        R16_B1_S.innerHTML = 'O';
+                        R16_B1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 5 || id == 6)
+            {
+                var R16_C1_S = document.getElementById('R16-C1-S');
+                var R16_C2_S = document.getElementById('R16-C2-S');
+                if (id == 5) 
+                { 
+                    var this_elem = R16_C1_S; 
+                    if (R16_C2_S.innerHTML == 'X')
+                    {
+                        R16_C2_S.innerHTML = 'O';
+                        R16_C2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R16_C2_S; 
+                    if (R16_C1_S.innerHTML == 'X')
+                    {
+                        R16_C1_S.innerHTML = 'O';
+                        R16_C1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 7 || id == 8)
+            {
+                var R16_D1_S = document.getElementById('R16-D1-S');
+                var R16_D2_S = document.getElementById('R16-D2-S');
+                if (id == 7) 
+                { 
+                    var this_elem = R16_D1_S; 
+                    if (R16_D2_S.innerHTML == 'X')
+                    {
+                        R16_D2_S.innerHTML = 'O';
+                        R16_D2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R16_D2_S; 
+                    if (R16_D1_S.innerHTML == 'X')
+                    {
+                        R16_D1_S.innerHTML = 'O';
+                        R16_D1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 9 || id == 10)
+            {
+                var R16_E1_S = document.getElementById('R16-E1-S');
+                var R16_E2_S = document.getElementById('R16-E2-S');
+                if (id == 9) 
+                { 
+                    var this_elem = R16_E1_S; 
+                    if (R16_E2_S.innerHTML == 'X')
+                    {
+                        R16_E2_S.innerHTML = 'O';
+                        R16_E2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R16_E2_S; 
+                    if (R16_E1_S.innerHTML == 'X')
+                    {
+                        R16_E1_S.innerHTML = 'O';
+                        R16_E1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 11 || id == 12)
+            {
+                var R16_F1_S = document.getElementById('R16-F1-S');
+                var R16_F2_S = document.getElementById('R16-F2-S');
+                if (id == 11) 
+                { 
+                    var this_elem = R16_F1_S; 
+                    if (R16_F2_S.innerHTML == 'X')
+                    {
+                        R16_F2_S.innerHTML = 'O';
+                        R16_F2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R16_F2_S; 
+                    if (R16_F1_S.innerHTML == 'X')
+                    {
+                        R16_F1_S.innerHTML = 'O';
+                        R16_F1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 13 || id == 14)
+            {
+                var R16_G1_S = document.getElementById('R16-G1-S');
+                var R16_G2_S = document.getElementById('R16-G2-S');
+                if (id == 13) 
+                { 
+                    var this_elem = R16_G1_S; 
+                    if (R16_G2_S.innerHTML == 'X')
+                    {
+                        R16_G2_S.innerHTML = 'O';
+                        R16_G2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R16_G2_S; 
+                    if (R16_G1_S.innerHTML == 'X')
+                    {
+                        R16_G1_S.innerHTML = 'O';
+                        R16_G1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 15 || id == 16)
+            {
+                var R16_H1_S = document.getElementById('R16-H1-S');
+                var R16_H2_S = document.getElementById('R16-H2-S');
+                if (id == 15) 
+                { 
+                    var this_elem = R16_H1_S; 
+                    if (R16_H2_S.innerHTML == 'X')
+                    {
+                        R16_H2_S.innerHTML = 'O';
+                        R16_H2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R16_H2_S; 
+                    if (R16_H1_S.innerHTML == 'X')
+                    {
+                        R16_H1_S.innerHTML = 'O';
+                        R16_H1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+            
+            this_elem.innerHTML = 'X';
+            this_elem.className = 'btn btn-success ks16-btn';
+        }
+
+        function continue2r8()
+        {
+            var R16_A1_S = document.getElementById('R16-A1-S');
+            var R16_A2_S = document.getElementById('R16-A2-S');
+            var R16_B1_S = document.getElementById('R16-B1-S');
+            var R16_B2_S = document.getElementById('R16-B2-S');
+            var R16_C1_S = document.getElementById('R16-C1-S');
+            var R16_C2_S = document.getElementById('R16-C2-S');
+            var R16_D1_S = document.getElementById('R16-D1-S');
+            var R16_D2_S = document.getElementById('R16-D2-S');
+            var R16_E1_S = document.getElementById('R16-E1-S');
+            var R16_E2_S = document.getElementById('R16-E2-S');
+            var R16_F1_S = document.getElementById('R16-F1-S');
+            var R16_F2_S = document.getElementById('R16-F2-S');
+            var R16_G1_S = document.getElementById('R16-G1-S');
+            var R16_G2_S = document.getElementById('R16-G2-S');
+            var R16_H1_S = document.getElementById('R16-H1-S');
+            var R16_H2_S = document.getElementById('R16-H2-S');
+
+            if (R16_A1_S.innerHTML == 'O' && R16_A2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R16_A1_S.innerHTML == 'X')
+            {
+                var a_w = document.getElementById('R16-A1-C').innerHTML;
+                var a_l = document.getElementById('R16-A2-C').innerHTML;
+            }
+            else
+            {
+                var a_w = document.getElementById('R16-A2-C').innerHTML;
+                var a_l = document.getElementById('R16-A1-C').innerHTML;
+            }
+
+            if (R16_B1_S.innerHTML == 'O' && R16_B2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R16_B1_S.innerHTML == 'X')
+            {
+                var b_w = document.getElementById('R16-B1-C').innerHTML;
+                var b_l = document.getElementById('R16-B2-C').innerHTML;
+            }
+            else
+            {
+                var b_w = document.getElementById('R16-B2-C').innerHTML;
+                var b_l = document.getElementById('R16-B1-C').innerHTML;
+            }
+
+            if (R16_C1_S.innerHTML == 'O' && R16_C2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R16_C1_S.innerHTML == 'X')
+            {
+                var c_w = document.getElementById('R16-C1-C').innerHTML;
+                var c_l = document.getElementById('R16-C2-C').innerHTML;
+            }
+            else
+            {
+                var c_w = document.getElementById('R16-C2-C').innerHTML;
+                var c_l = document.getElementById('R16-C1-C').innerHTML;
+            }
+
+            if (R16_D1_S.innerHTML == 'O' && R16_D2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R16_D1_S.innerHTML == 'X')
+            {
+                var d_w = document.getElementById('R16-D1-C').innerHTML;
+                var d_l = document.getElementById('R16-D2-C').innerHTML;
+            }
+            else
+            {
+                var d_w = document.getElementById('R16-D2-C').innerHTML;
+                var d_l = document.getElementById('R16-D1-C').innerHTML;
+            }
+
+            if (R16_E1_S.innerHTML == 'O' && R16_E2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R16_E1_S.innerHTML == 'X')
+            {
+                var e_w = document.getElementById('R16-E1-C').innerHTML;
+                var e_l = document.getElementById('R16-E2-C').innerHTML;
+            }
+            else
+            {
+                var e_w = document.getElementById('R16-E2-C').innerHTML;
+                var e_l = document.getElementById('R16-E1-C').innerHTML;
+            }
+
+            if (R16_F1_S.innerHTML == 'O' && R16_F2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R16_F1_S.innerHTML == 'X')
+            {
+                var f_w = document.getElementById('R16-F1-C').innerHTML;
+                var f_l = document.getElementById('R16-F2-C').innerHTML;
+            }
+            else
+            {
+                var f_w = document.getElementById('R16-F2-C').innerHTML;
+                var f_l = document.getElementById('R16-F1-C').innerHTML;
+            }
+
+            if (R16_G1_S.innerHTML == 'O' && R16_G2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R16_G1_S.innerHTML == 'X')
+            {
+                var g_w = document.getElementById('R16-G1-C').innerHTML;
+                var g_l = document.getElementById('R16-G2-C').innerHTML;
+            }
+            else
+            {
+                var g_w = document.getElementById('R16-G2-C').innerHTML;
+                var g_l = document.getElementById('R16-G1-C').innerHTML;
+            }
+
+            if (R16_H1_S.innerHTML == 'O' && R16_H2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R16_H1_S.innerHTML == 'X')
+            {
+                var h_w = document.getElementById('R16-H1-C').innerHTML;
+                var h_l = document.getElementById('R16-H2-C').innerHTML;
+            }
+            else
+            {
+                var h_w = document.getElementById('R16-H2-C').innerHTML;
+                var h_l = document.getElementById('R16-H1-C').innerHTML;
+            }
+            
+            document.getElementById('ko1-choosing').style.display = 'none';
+            document.getElementById('ko1-chosen').style.display = 'block';
+
+            var R16_A_W = document.getElementById('R16-A-W');
+            var R16_A_L = document.getElementById('R16-A-L');
+            var R16_B_W = document.getElementById('R16-B-W');
+            var R16_B_L = document.getElementById('R16-B-L');
+            var R16_C_W = document.getElementById('R16-C-W');
+            var R16_C_L = document.getElementById('R16-C-L');
+            var R16_D_W = document.getElementById('R16-D-W');
+            var R16_D_L = document.getElementById('R16-D-L');
+            var R16_E_W = document.getElementById('R16-E-W');
+            var R16_E_L = document.getElementById('R16-E-L');
+            var R16_F_W = document.getElementById('R16-F-W');
+            var R16_F_L = document.getElementById('R16-F-L');
+            var R16_G_W = document.getElementById('R16-G-W');
+            var R16_G_L = document.getElementById('R16-G-L');
+            var R16_H_W = document.getElementById('R16-H-W');
+            var R16_H_L = document.getElementById('R16-H-L');
+
+            R16_A_W.src = './nations/'.concat(a_w).concat('.jpg');
+            R16_A_L.src = './nations/'.concat(a_l).concat('.jpg');
+            R16_B_W.src = './nations/'.concat(b_w).concat('.jpg');
+            R16_B_L.src = './nations/'.concat(b_l).concat('.jpg');
+            R16_C_W.src = './nations/'.concat(c_w).concat('.jpg');
+            R16_C_L.src = './nations/'.concat(c_l).concat('.jpg');
+            R16_D_W.src = './nations/'.concat(d_w).concat('.jpg');
+            R16_D_L.src = './nations/'.concat(d_l).concat('.jpg');
+            R16_E_W.src = './nations/'.concat(e_w).concat('.jpg');
+            R16_E_L.src = './nations/'.concat(e_l).concat('.jpg');
+            R16_F_W.src = './nations/'.concat(f_w).concat('.jpg');
+            R16_F_L.src = './nations/'.concat(f_l).concat('.jpg');
+            R16_G_W.src = './nations/'.concat(g_w).concat('.jpg');
+            R16_G_L.src = './nations/'.concat(g_l).concat('.jpg');
+            R16_H_W.src = './nations/'.concat(h_w).concat('.jpg');
+            R16_H_L.src = './nations/'.concat(h_l).concat('.jpg');
+
+            var showbox = document.getElementById('ko2');
+            showbox.style.display = 'block';
+
+            var R8_A1_C = document.getElementById('R8-A1-C');
+            var R8_A1_I = document.getElementById('R8-A1-I');
+            var R8_A2_C = document.getElementById('R8-A2-C');
+            var R8_A2_I = document.getElementById('R8-A2-I');
+            var R8_B1_C = document.getElementById('R8-B1-C');
+            var R8_B1_I = document.getElementById('R8-B1-I');
+            var R8_B2_C = document.getElementById('R8-B2-C');
+            var R8_B2_I = document.getElementById('R8-B2-I');
+            var R8_C1_C = document.getElementById('R8-C1-C');
+            var R8_C1_I = document.getElementById('R8-C1-I');
+            var R8_C2_C = document.getElementById('R8-C2-C');
+            var R8_C2_I = document.getElementById('R8-C2-I');
+            var R8_D1_C = document.getElementById('R8-D1-C');
+            var R8_D1_I = document.getElementById('R8-D1-I');
+            var R8_D2_C = document.getElementById('R8-D2-C');
+            var R8_D2_I = document.getElementById('R8-D2-I');
+
+            R8_A1_C.innerHTML = a_w;
+            R8_A2_C.innerHTML = b_w;
+            R8_B1_C.innerHTML = c_w;
+            R8_B2_C.innerHTML = d_w;
+            R8_C1_C.innerHTML = e_w;
+            R8_C2_C.innerHTML = f_w;
+            R8_D1_C.innerHTML = g_w;
+            R8_D2_C.innerHTML = h_w;
+
+            R8_A1_I.src = './nations/'.concat(a_w).concat('.jpg');
+            R8_A2_I.src = './nations/'.concat(b_w).concat('.jpg');
+            R8_B1_I.src = './nations/'.concat(c_w).concat('.jpg');
+            R8_B2_I.src = './nations/'.concat(d_w).concat('.jpg');
+            R8_C1_I.src = './nations/'.concat(e_w).concat('.jpg');
+            R8_C2_I.src = './nations/'.concat(f_w).concat('.jpg');
+            R8_D1_I.src = './nations/'.concat(g_w).concat('.jpg');
+            R8_D2_I.src = './nations/'.concat(h_w).concat('.jpg');
+
+            var btn = document.getElementById('continue2ks');
+            btn.style.display = 'none';
+
+        }
+    
+        function back2r16()
+        {
+            var ko2 = document.getElementById('ko2');
+            var ko1_choosing = document.getElementById('ko1-choosing');
+            var ko1_chosen = document.getElementById('ko1-chosen');
+            var btn = document.getElementById('continue2ks');
+
+            btn.style.display = 'block';
+            ko2.style.display = 'none';
+            ko1_choosing.style.display = 'block';
+            ko1_chosen.style.display = 'none';
+        }
+
+        function select_ks8(id)
+        {
+            if (id == 1 || id == 2)
+            {
+                var R8_A1_S = document.getElementById('R8-A1-S');
+                var R8_A2_S = document.getElementById('R8-A2-S');
+                if (id == 1) 
+                { 
+                    var this_elem = R8_A1_S; 
+                    if (R8_A2_S.innerHTML == 'X')
+                    {
+                        R8_A2_S.innerHTML = 'O';
+                        R8_A2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R8_A2_S; 
+                    if (R8_A1_S.innerHTML == 'X')
+                    {
+                        R8_A1_S.innerHTML = 'O';
+                        R8_A1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 3 || id == 4)
+            {
+                var R8_B1_S = document.getElementById('R8-B1-S');
+                var R8_B2_S = document.getElementById('R8-B2-S');
+                if (id == 3)
+                { 
+                    var this_elem = R8_B1_S; 
+                    if (R8_B2_S.innerHTML == 'X')
+                    {
+                        R8_B2_S.innerHTML = 'O';
+                        R8_B2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R8_B2_S; 
+                    if (R8_B1_S.innerHTML == 'X')
+                    {
+                        R8_B1_S.innerHTML = 'O';
+                        R8_B1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 5 || id == 6)
+            {
+                var R8_C1_S = document.getElementById('R8-C1-S');
+                var R8_C2_S = document.getElementById('R8-C2-S');
+                if (id == 5) 
+                { 
+                    var this_elem = R8_C1_S; 
+                    if (R8_C2_S.innerHTML == 'X')
+                    {
+                        R8_C2_S.innerHTML = 'O';
+                        R8_C2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R8_C2_S; 
+                    if (R8_C1_S.innerHTML == 'X')
+                    {
+                        R8_C1_S.innerHTML = 'O';
+                        R8_C1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 7 || id == 8)
+            {
+                var R8_D1_S = document.getElementById('R8-D1-S');
+                var R8_D2_S = document.getElementById('R8-D2-S');
+                if (id == 7) 
+                { 
+                    var this_elem = R8_D1_S; 
+                    if (R8_D2_S.innerHTML == 'X')
+                    {
+                        R8_D2_S.innerHTML = 'O';
+                        R8_D2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R8_D2_S; 
+                    if (R8_D1_S.innerHTML == 'X')
+                    {
+                        R8_D1_S.innerHTML = 'O';
+                        R8_D1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+            
+            this_elem.innerHTML = 'X';
+            this_elem.className = 'btn btn-success ks16-btn';
+        }
+ 
+        function continue2r4()
+        {
+            var R8_A1_S = document.getElementById('R8-A1-S');
+            var R8_A2_S = document.getElementById('R8-A2-S');
+            var R8_B1_S = document.getElementById('R8-B1-S');
+            var R8_B2_S = document.getElementById('R8-B2-S');
+            var R8_C1_S = document.getElementById('R8-C1-S');
+            var R8_C2_S = document.getElementById('R8-C2-S');
+            var R8_D1_S = document.getElementById('R8-D1-S');
+            var R8_D2_S = document.getElementById('R8-D2-S');
+
+            if (R8_A1_S.innerHTML == 'O' && R8_A2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R8_A1_S.innerHTML == 'X')
+            {
+                var a_w = document.getElementById('R8-A1-C').innerHTML;
+                var a_l = document.getElementById('R8-A2-C').innerHTML;
+            }
+            else
+            {
+                var a_w = document.getElementById('R8-A2-C').innerHTML;
+                var a_l = document.getElementById('R8-A1-C').innerHTML;
+            }
+
+            if (R8_B1_S.innerHTML == 'O' && R8_B2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R8_B1_S.innerHTML == 'X')
+            {
+                var b_w = document.getElementById('R8-B1-C').innerHTML;
+                var b_l = document.getElementById('R8-B2-C').innerHTML;
+            }
+            else
+            {
+                var b_w = document.getElementById('R8-B2-C').innerHTML;
+                var b_l = document.getElementById('R8-B1-C').innerHTML;
+            }
+
+            if (R8_C1_S.innerHTML == 'O' && R8_C2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R8_C1_S.innerHTML == 'X')
+            {
+                var c_w = document.getElementById('R8-C1-C').innerHTML;
+                var c_l = document.getElementById('R8-C2-C').innerHTML;
+            }
+            else
+            {
+                var c_w = document.getElementById('R8-C2-C').innerHTML;
+                var c_l = document.getElementById('R8-C1-C').innerHTML;
+            }
+
+            if (R8_D1_S.innerHTML == 'O' && R8_D2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R8_D1_S.innerHTML == 'X')
+            {
+                var d_w = document.getElementById('R8-D1-C').innerHTML;
+                var d_l = document.getElementById('R8-D2-C').innerHTML;
+            }
+            else
+            {
+                var d_w = document.getElementById('R8-D2-C').innerHTML;
+                var d_l = document.getElementById('R8-D1-C').innerHTML;
+            }
+
+            document.getElementById('ko2-choosing').style.display = 'none';
+            document.getElementById('ko2-chosen').style.display = 'block';
+
+            var R8_A_W = document.getElementById('R8-A-W');
+            var R8_A_L = document.getElementById('R8-A-L');
+            var R8_B_W = document.getElementById('R8-B-W');
+            var R8_B_L = document.getElementById('R8-B-L');
+            var R8_C_W = document.getElementById('R8-C-W');
+            var R8_C_L = document.getElementById('R8-C-L');
+            var R8_D_W = document.getElementById('R8-D-W');
+            var R8_D_L = document.getElementById('R8-D-L');
+
+            R8_A_W.src = './nations/'.concat(a_w).concat('.jpg');
+            R8_A_L.src = './nations/'.concat(a_l).concat('.jpg');
+            R8_B_W.src = './nations/'.concat(b_w).concat('.jpg');
+            R8_B_L.src = './nations/'.concat(b_l).concat('.jpg');
+            R8_C_W.src = './nations/'.concat(c_w).concat('.jpg');
+            R8_C_L.src = './nations/'.concat(c_l).concat('.jpg');
+            R8_D_W.src = './nations/'.concat(d_w).concat('.jpg');
+            R8_D_L.src = './nations/'.concat(d_l).concat('.jpg');
+
+            var R4_A1_C = document.getElementById('R4-A1-C');
+            var R4_A1_I = document.getElementById('R4-A1-I');
+            var R4_A2_C = document.getElementById('R4-A2-C');
+            var R4_A2_I = document.getElementById('R4-A2-I');
+            var R4_B1_C = document.getElementById('R4-B1-C');
+            var R4_B1_I = document.getElementById('R4-B1-I');
+            var R4_B2_C = document.getElementById('R4-B2-C');
+            var R4_B2_I = document.getElementById('R4-B2-I');
+
+            R4_A1_C.innerHTML = a_w;
+            R4_A2_C.innerHTML = b_w;
+            R4_B1_C.innerHTML = c_w;
+            R4_B2_C.innerHTML = d_w;
+
+            R4_A1_I.src = './nations/'.concat(a_w).concat('.jpg');
+            R4_A2_I.src = './nations/'.concat(b_w).concat('.jpg');
+            R4_B1_I.src = './nations/'.concat(c_w).concat('.jpg');
+            R4_B2_I.src = './nations/'.concat(d_w).concat('.jpg');
+
+
+            var showbox = document.getElementById('ko3');
+            showbox.style.display = 'block';
+
+            var btn = document.getElementById('back2r16');
+            btn.style.display = 'none';
+
+        }
+    
+        function back2r8()
+        {
+            var ko3 = document.getElementById('ko3');
+            var ko2_choosing = document.getElementById('ko2-choosing');
+            var ko2_chosen = document.getElementById('ko2-chosen');
+            var btn = document.getElementById('back2r16');
+
+            btn.style.display = 'block';
+            ko3.style.display = 'none';
+            ko2_choosing.style.display = 'block';
+            ko2_chosen.style.display = 'none';
+
+        }
+    
+        function select_semi(id)
+        {
+            if (id == 1 || id == 2)
+            {
+                var R4_A1_S = document.getElementById('R4-A1-S');
+                var R4_A2_S = document.getElementById('R4-A2-S');
+                if (id == 1) 
+                { 
+                    var this_elem = R4_A1_S; 
+                    if (R4_A2_S.innerHTML == 'X')
+                    {
+                        R4_A2_S.innerHTML = 'O';
+                        R4_A2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R4_A2_S; 
+                    if (R4_A1_S.innerHTML == 'X')
+                    {
+                        R4_A1_S.innerHTML = 'O';
+                        R4_A1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            if (id == 3 || id == 4)
+            {
+                var R4_B1_S = document.getElementById('R4-B1-S');
+                var R4_B2_S = document.getElementById('R4-B2-S');
+                if (id == 3)
+                { 
+                    var this_elem = R4_B1_S; 
+                    if (R4_B2_S.innerHTML == 'X')
+                    {
+                        R4_B2_S.innerHTML = 'O';
+                        R4_B2_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+                else
+                { 
+                    var this_elem = R4_B2_S; 
+                    if (R4_B1_S.innerHTML == 'X')
+                    {
+                        R4_B1_S.innerHTML = 'O';
+                        R4_B1_S.className = 'btn btn-outline-success ks16-btn';
+                    }
+                }
+            }
+
+            this_elem.innerHTML = 'X';
+            this_elem.className = 'btn btn-success ks16-btn';
+        }
+ 
+        function continue2final()
+        {
+            var R4_A1_S = document.getElementById('R4-A1-S');
+            var R4_A2_S = document.getElementById('R4-A2-S');
+            var R4_B1_S = document.getElementById('R4-B1-S');
+            var R4_B2_S = document.getElementById('R4-B2-S');
+
+            if (R4_A1_S.innerHTML == 'O' && R4_A2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R4_A1_S.innerHTML == 'X')
+            {
+                var a_w = document.getElementById('R4-A1-C').innerHTML;
+                var a_l = document.getElementById('R4-A2-C').innerHTML;
+            }
+            else
+            {
+                var a_w = document.getElementById('R4-A2-C').innerHTML;
+                var a_l = document.getElementById('R4-A1-C').innerHTML;
+            }
+
+            if (R4_B1_S.innerHTML == 'O' && R4_B2_S.innerHTML == 'O')
+            {
+                alert('You must select a winner for each fixture!')
+                return;
+            }
+            else if (R4_B1_S.innerHTML == 'X')
+            {
+                var b_w = document.getElementById('R4-B1-C').innerHTML;
+                var b_l = document.getElementById('R4-B2-C').innerHTML;
+            }
+            else
+            {
+                var b_w = document.getElementById('R4-B2-C').innerHTML;
+                var b_l = document.getElementById('R4-B1-C').innerHTML;
+            }
+
+            document.getElementById('ko3-choosing').style.display = 'none';
+            document.getElementById('ko3-chosen').style.display = 'block';
+
+            var R4_A_W = document.getElementById('R4-A-W');
+            var R4_A_L = document.getElementById('R4-A-L');
+            var R4_B_W = document.getElementById('R4-B-W');
+            var R4_B_L = document.getElementById('R4-B-L');
+
+            R4_A_W.src = './nations/'.concat(a_w).concat('.jpg');
+            R4_A_L.src = './nations/'.concat(a_l).concat('.jpg');
+            R4_B_W.src = './nations/'.concat(b_w).concat('.jpg');
+            R4_B_L.src = './nations/'.concat(b_l).concat('.jpg');
+
+            var F_L_C = document.getElementById('F-L-C');
+            var F_L_I = document.getElementById('F-L-I');
+            var F_R_C = document.getElementById('F-R-C');
+            var F_R_I = document.getElementById('F-R-I');
+
+            F_L_C.innerHTML = a_w;
+            F_R_C.innerHTML = b_w;
+
+            F_L_I.src = './nations/'.concat(a_w).concat('.jpg');
+            F_R_I.src = './nations/'.concat(b_w).concat('.jpg');
+
+            var showbox = document.getElementById('final');
+            showbox.style.display = 'block';
+
+            var btn = document.getElementById('back2r8');
+            btn.style.display = 'none';
+
+
+
+        }
+       
+        function back2r4()
+        {
+            var final = document.getElementById('final');
+            var ko3_choosing = document.getElementById('ko3-choosing');
+            var ko3_chosen = document.getElementById('ko3-chosen');
+            var btn = document.getElementById('back2r8');
+
+            btn.style.display = 'block';
+            final.style.display = 'none';
+            ko3_choosing.style.display = 'block';
+            ko3_chosen.style.display = 'none';
+
+        }
+    
+        var base_color = ['white', 'white'];
+
+        function select_final(id)
+        {
+            var final_left_div = document.getElementById('final-left-div');
+            var final_right_div = document.getElementById('final-right-div');
+
+            if (id == 1) 
+            { 
+                final_left_div.style.backgroundColor = 'springgreen';
+                final_right_div.style.backgroundColor = 'tomato';
+                base_color = ['springgreen', 'tomato'];
+            }
+            else
+            { 
+                final_left_div.style.backgroundColor = 'tomato';
+                final_right_div.style.backgroundColor = 'springgreen';
+                base_color = ['tomato', 'springgreen'];
+            }
+        }
+       
+        document.getElementById('final-left-div').addEventListener('mouseover', hover_left);
+
+        document.getElementById('final-left-div').addEventListener('mouseout', hover_out_left)
+
+        document.getElementById('final-right-div').addEventListener('mouseover', hover_right);
+
+        document.getElementById('final-right-div').addEventListener('mouseout', hover_out_right);
+
+        function hover_left()
+        {  
+            document.getElementById('final-left-div').style.backgroundColor = 'springgreen';
+            document.getElementById('final-right-div').style.backgroundColor = 'tomato'; 
+        }
+
+        function hover_right()
+        {
+            document.getElementById('final-right-div').style.backgroundColor = 'springgreen';
+            document.getElementById('final-left-div').style.backgroundColor = 'tomato';
+        }
+
+        function hover_out_left()
+        {
+            changeback(1, base_color)
+        }
+
+        function hover_out_right()
+        {
+            changeback(2, base_color)
+        }
+
+        function changeback(id, base_color)
+        {
+            if (id == 1)
+            {
+                document.getElementById('final-left-div').style.backgroundColor = base_color[0];
+                document.getElementById('final-right-div').style.backgroundColor = base_color[1];
+            }
+            else
+            {
+                document.getElementById('final-left-div').style.backgroundColor = base_color[0];
+                document.getElementById('final-right-div').style.backgroundColor = base_color[1];
+
+            }
+        }
+
+        function over()
+        {
+            var left = document.getElementById('final-left-div');
+            var right = document.getElementById('final-right-div');
+            var winner_C = document.getElementById('winner-C');
+            var winner_I = document.getElementById('winner-I');
+            var result = document.getElementById('result');
+
+            if (left.style.backgroundColor == 'springgreen')
+            {
+                var winner = document.getElementById('F-L-C').innerHTML;
+            }
+            else
+            {
+                var winner = document.getElementById('F-R-C').innerHTML;
+            }
+
+            winner_C.innerHTML = winner;
+            winner_I.src = './nations/'.concat(winner).concat('.jpg');
+
+            var btn = document.getElementById('back2r4');
+            btn.style.display = 'none';
+
+            var back_btn = document.getElementById('back2final');
+            var over_btn = document.getElementById('over');
+
+            back_btn.style.display = 'block';
+            over_btn.style.display = 'none';
+            
+            result.style.display = 'block';
+
+            var final_left_div = document.getElementById('final-left-div');
+            var final_right_div = document.getElementById('final-right-div');
+
+            final_left_div.removeAttribute('onclick');
+            final_right_div.removeAttribute('onclick');
+
+            document.getElementById('final-left-div').removeEventListener('mouseover', hover_left);
+
+            document.getElementById('final-left-div').removeEventListener('mouseout', hover_out_left)
+
+            document.getElementById('final-right-div').removeEventListener('mouseover', hover_right);
+
+            document.getElementById('final-right-div').removeEventListener('mouseout', hover_out_right);
+
+
+        }
+
+        function back2final()
+        {
+            var result = document.getElementById('result');
+            var btn = document.getElementById('back2r4');
+            var back_btn = document.getElementById('back2final');
+            var over_btn = document.getElementById('over');
+
+            btn.style.display = 'block';
+            result.style.display = 'none';
+            back_btn.style.display = 'none';
+            over_btn.style.display = 'block';
+
+            var final_left_div = document.getElementById('final-left-div');
+            var final_right_div = document.getElementById('final-right-div');
+
+            final_left_div.setAttribute('onclick', 'select_final(1)');
+            final_right_div.setAttribute('onclick', 'select_final(2)');
+
+            document.getElementById('final-left-div').addEventListener('mouseover', hover_left);
+
+            document.getElementById('final-left-div').addEventListener('mouseout', hover_out_left)
+
+            document.getElementById('final-right-div').addEventListener('mouseover', hover_right);
+
+            document.getElementById('final-right-div').addEventListener('mouseout', hover_out_right);
+
+
+
+        }
+
+
+
+
+
+        
+
+
+
+
+    </script>
+
+<style>
+    body {
+        background-color: rgb(59, 137, 157);
+    }
+
+    img {
+        pointer-events: none;
+    }
+
+    .country {
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 35px; 
+        margin-top: 25px;
+    }
+    
+    .number {
+        margin: 30px 0 0 20px;
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 25px; 
+        width: 60px;
+    }
+
+    .gs-images {
+        height: 80px; 
+        width: 80px;
+    }
+
+    .gs-div {
+        height: 100px; 
+        width: 460px;
+    }
+
+    .gs-div-border {
+        border-bottom: 2px lightgray solid;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-group {
+        background-color: white; 
+        border: 15px rgb(165, 75, 147) solid; 
+        border-radius: 25px;
+    }
+
+    .knockout-style {
+        height: 80px; 
+        width: 100%; 
+    }
+
+    .knockout-images {
+        height: 60px; 
+        width: 60px;
+    }
+
+    .knockout-country {
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 30px; 
+        margin-top: 20px;
+    }
+
+    .div-ko1 {
+        background-color: white; 
+        border: 15px rgb(240, 143, 51) solid;
+        border-radius: 25px;
+    }
+
+    .div-ko2 {
+        background-color: white; 
+        border: 15px rgb(88, 178, 121) solid;
+        border-radius: 25px;
+    }
+
+    .div-ko3 {
+        background-color: white; 
+        border: 15px rgb(199, 172, 135) solid;
+        border-radius: 25px;
+    }
+
+    .round-flag {
+        border-radius: 50%;
+    }
+
+    .ks-wl {
+        background: linear-gradient(to right, tomato 50%, springgreen 50%);
+    }
+
+    .ks16-btn {
+        height: 40px; 
+        margin-top: 20px; 
+        width: 40px;
+    }
+
+/*
+    .final-right-div:hover {
+        background-color: springgreen;
+    }
+
+    .final-right-div:hover ~ .final-left-div {
+        background-color: tomato;
+    }
+
+    .final-left-div:hover {
+        background-color: springgreen;
+    }
+
+    .final-left-div:hover ~ .final-right-div {
+        background-color: tomato;
+    }
+    */
+
+
+
+
+
+</style>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{% load static %}
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <title>Euro 2020 Predictor - {% block title%}{% endblock %}</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/59c08bc980.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+
+        <style>
+            .tac{
+                text-align: center;
+            }
+        
+            .gap{
+                height: 12px;
+            }
+
+            #submit-button:hover{
+                opacity: 0.1;
+            }
+
+            body {
+                background-color: rgb(59, 137, 157);
+                color: white;
+            }
+        </style>
+        
+        {% include 'navbar.html' %}
+
+        {% if messages %}
+            {% for message in messages %}
+                {% if "error" in message.tags %}
+                    <div class="alert alert-danger alert-dismissible fixed-top" style="margin-top: 50px;">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        {{ message }}
+                    </div>  
+                {% elif "success" in message.tags %}
+                    <div class="alert alert-success alert-dismissible fixed-top" style="margin-top: 50px;">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        {{ message }}
+                    </div> 
+                {% endif %}
+            {% endfor %}
+            <div style="height: 50px;"></div>
+        {% endif %}
+
+        <div>
+            <div style="height: 120px;"></div>
+            {% block body %}
+            {% endblock %}
+            <div style="height: 80px;"></div>        
+        </div>
+        <div style="height: 100px;"></div>
+        
+
+        {% include 'footer.html' %}
+    
+    
+    </body>
+
+</html>

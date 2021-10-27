@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register
+{% endblock %}
+
+
+{% block body %}
+
+
+
+    <h1 class="tac">Register</h1>
+    <br><br>
+
+
+
+    <form action="{% url 'register' %}" method="POST">
+        {% csrf_token %}
+        <div class="tac">
+
+            {% for i in form %}
+				{% if i.errors %}<li style="color: red">{{ i.label }}: {{ i.errors|striptags }}</li>{% endif %}
+			{% endfor %}
+            <br><br>
+
+            {{ form.first_name.label }} <div class="gap"></div>
+            {{ form.first_name }}
+
+            <br><br>
+
+            {{ form.last_name.label }} <div class="gap"></div>
+            {{ form.last_name }}
+
+            <br><br><hr><br>
+
+            {{ form.username.label }} <div class="gap"></div>
+            {{ form.username }}
+
+            <br><br>
+
+            {{ form.email.label }} <div class="gap"></div>
+            {{ form.email }}
+
+            <br><br>
+
+            {{ form.password1.label }} <div class="gap"></div>
+            {{ form.password1 }}
+
+            <br><br>
+
+            {{ form.password2.label }} <div class="gap"></div>
+            {{ form.password2 }}
+
+
+            <br><br><br>
+
+            <input type="submit" class="btn btn-dark" value="Register" name="Create User">
+        </div>
+    </form>
+
+    <div class="tac" style="margin-top: 50px;">
+        Already Have an Account? <a href="{% url 'login' %}">Login</a>
+    </div>
+    <div style="height: 100px;"></div>
+{% endblock %}

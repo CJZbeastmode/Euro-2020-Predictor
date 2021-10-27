@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
+{% load static %}
+<div style="display: flex; flex-direction: row; justify-content: center;">   
+    <img src="{% static 'EURO_Logo.jpeg' %}" style="width: 40%" alt="">
+</div>
+
+<div style="display: flex; flex-direction: row;">
+    <div style="width: 8%;"></div>
+    <div style="width: 84%; display: flex; justify-content: center;">
+        <h1>Make Your Euro 2020 Predictions Now!</h1>
+    </div>
+    <div style="width: 8%;"></div>
+</div>
+
+<div style="height: 100px;"></div> 
+
+
+<div style="display: flex; flex-direction: row; justify-content: center;">  
+    <a href="{% url 'predictor' %}"><button class="btn btn-warning">Start From Here</button></a>
+</div>
+
+
+
+{% endblock %}

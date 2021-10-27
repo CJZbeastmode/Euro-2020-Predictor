@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Login
+{% endblock %}
+
+
+{% block body %}
+
+<h1 class="tac">Login</h1>
+<br><br>
+
+<form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+
+    <div class="tac">
+        {{ form.errors }}
+
+
+        Username or Email <div class="gap"></div>
+        {{ form.username }}
+
+        <br><br>
+
+        {{ form.password.label }} <div class="gap"></div>
+        {{ form.password }}
+
+        <br><br><br>
+        
+        <input type="submit" class="btn btn-warning" value="Login" name="Create User">
+    </div>
+
+    <div class="tac" style="margin-top: 50px;">
+        Do not have an account? <a href="{% url 'register' %}" style="color: red;">Register</a>
+    </div>
+    <div style="height: 100px;"></div>
+</form>
+
+{% endblock %}

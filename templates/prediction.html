@@ -1,0 +1,1303 @@
+{% extends 'base.html' %}
+{% block title %}{{ i.username }}'s Prediciton{% endblock %}
+
+{% block body %}
+{% load static %}
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+
+<div id="header">
+    <div style="display: flex; justify-content: center;">
+        <img src="{% static 'EURO_Logo.jpeg' %}" style="width: 40%;">
+    </div>
+    {% if i.user_id == session_id %}
+    <h1 style="font-family: 'Poppins', sans-serif; font-size: 60px; text-align: center; color: white; margin-top: -20px;">My Prediction</h1>
+    {% else %}
+    <h1 style="font-family: 'Poppins', sans-serif; font-size: 60px; text-align: center; color: white; margin-top: -20px;">{{ i.username }}'s Prediction</h1>
+    {% endif %}
+</div>
+
+<div style="height: 100px;"></div>
+<h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; text-align: center; color: white; margin-top: -20px;">Group Stage</h1>
+<div style="height: 100px;"></div>
+
+<div class="row-flex">
+    <div style="width: 8%;"></div>
+    <div style="width: 84%;">
+
+        <div class="row-flex">
+            <div style="width: 30%;">
+                <div style="background-color: white; border: 5px solid rgb(165, 75, 147); border-radius: 25px;">
+                    <div style="height: 45px; background-color: rgb(165, 75, 147); border-radius: 10px 10px 0 0;">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 25px; color: white; margin: 0 0 0 20px;">Group A</h1>
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">1</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="A1-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="A1-C">{{ i.gs_a1 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">2</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="A2-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="A2-C">{{ i.gs_a2 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    {% if i.btf_l1 == i.gs_a3 or i.btf_l2 == i.gs_a3 %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: tomato;">
+                    {% else %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                    {% endif %}
+                        <div class="row-flex">
+                            <div class="number">3</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="A3-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="A3-C">{{ i.gs_a3 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div style="background-color: tomato; border-radius: 0 0 20px 20px;">
+                        <div class="row-flex">
+                            <div class="number">4</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="A4-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="A4-C">{{ i.gs_a4 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div style="width: 5%;"></div>
+            <div style="width: 30%;">
+                <div style="background-color: white; border: 5px solid rgb(165, 75, 147); border-radius: 25px;">
+                    <div style="height: 45px; background-color: rgb(165, 75, 147); border-radius: 10px 10px 0 0;">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 25px; color: white; margin: 0 0 0 20px;">Group B</h1>
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">1</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="B1-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="B1-C">{{ i.gs_b1 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">2</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="B2-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="B2-C">{{ i.gs_b2 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+                    {% if i.btf_l1 == i.gs_b3 or i.btf_l2 == i.gs_b3 %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: tomato;">
+                    {% else %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                    {% endif %}
+                        <div class="row-flex">
+                            <div class="number">3</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="B3-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="B3-C">{{ i.gs_b3 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+                    <div style="background-color: tomato; border-radius: 0 0 20px 20px;">
+                        <div class="row-flex">
+                            <div class="number">4</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="B4-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="B4-C">{{ i.gs_b4 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div style="width: 5%;"></div>
+            <div style="width: 30%;">
+                <div style="background-color: white; border: 5px solid rgb(165, 75, 147); border-radius: 25px;">
+                    <div style="height: 45px; background-color: rgb(165, 75, 147); border-radius: 10px 10px 0 0;">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 25px; color: white; margin: 0 0 0 20px;">Group C</h1>
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">1</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="C1-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="C1-C">{{ i.gs_c1 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">2</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="C2-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="C2-C">{{ i.gs_c2 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+                    {% if i.btf_l1 == i.gs_c3 or i.btf_l2 == i.gs_c3 %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: tomato;">
+                    {% else %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                    {% endif %}
+                        <div class="row-flex">
+                            <div class="number">3</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="C3-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="C3-C">{{ i.gs_c3 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+                    <div style="background-color: tomato; border-radius: 0 0 20px 20px;">
+                        <div class="row-flex">
+                            <div class="number">4</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="C4-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="C4-C">{{ i.gs_c4 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div style="height: 50px;"></div>
+
+        <div class="row-flex">
+            <div style="width: 30%;">
+                <div style="background-color: white; border: 5px solid rgb(165, 75, 147); border-radius: 25px;">
+                    <div style="height: 45px; background-color: rgb(165, 75, 147); border-radius: 10px 10px 0 0;">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 25px; color: white; margin: 0 0 0 20px;">Group D</h1>
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">1</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="D1-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="D1-C">{{ i.gs_d1 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">2</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="D2-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="D2-C">{{ i.gs_d2 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    {% if i.btf_l1 == i.gs_d3 or i.btf_l2 == i.gs_d3 %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: tomato;">
+                    {% else %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                    {% endif %}
+                        <div class="row-flex">
+                            <div class="number">3</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="D3-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="D3-C">{{ i.gs_d3 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div style="background-color: tomato; border-radius: 0 0 20px 20px;">
+                        <div class="row-flex">
+                            <div class="number">4</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="D4-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="D4-C">{{ i.gs_d4 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div style="width: 5%;"></div>
+            <div style="width: 30%;">
+                <div style="background-color: white; border: 5px solid rgb(165, 75, 147); border-radius: 25px;">
+                    <div style="height: 45px; background-color: rgb(165, 75, 147); border-radius: 10px 10px 0 0;">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 25px; color: white; margin: 0 0 0 20px;">Group E</h1>
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">1</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="E1-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="E1-C">{{ i.gs_e1 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">2</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="E2-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="E2-C">{{ i.gs_e2 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+                    {% if i.btf_l1 == i.gs_e3 or i.btf_l2 == i.gs_e3 %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: tomato;">
+                    {% else %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                    {% endif %}
+                        <div class="row-flex">
+                            <div class="number">3</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="E3-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="E3-C">{{ i.gs_e3 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+                    <div style="background-color: tomato; border-radius: 0 0 20px 20px;">
+                        <div class="row-flex">
+                            <div class="number">4</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="E4-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="E4-C">{{ i.gs_e4 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div style="width: 5%;"></div>
+            <div style="width: 30%;">
+                <div style="background-color: white; border: 5px solid rgb(165, 75, 147); border-radius: 25px;">
+                    <div style="height: 45px; background-color: rgb(165, 75, 147); border-radius: 10px 10px 0 0;">
+                        <h1 style="font-family: 'Poppins', sans-serif; font-size: 25px; color: white; margin: 0 0 0 20px;">Group F</h1>
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">1</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="F1-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="F1-C">{{ i.gs_f1 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                        <div class="row-flex">
+                            <div class="number">2</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="F2-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="F2-C">{{ i.gs_f2 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+                    {% if i.btf_l1 == i.gs_f3 or i.btf_l2 == i.gs_f3 %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: tomato;">
+                    {% else %}
+                    <div style="border-bottom: 2px lightgray solid; background-color: springgreen;">
+                    {% endif %}
+                        <div class="row-flex">
+                            <div class="number">3</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="F3-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="F3-C">{{ i.gs_f3 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+                    <div style="background-color: tomato; border-radius: 0 0 20px 20px;">
+                        <div class="row-flex">
+                            <div class="number">4</div>
+                            <div>
+                                <div class="row-flex">
+                                    <div>
+                                        <div style="height: 15px;"></div>
+                                        <img src="{% static 'nations/N. Macedonia.jpg' %}" class="gs-image" id="F4-I">
+                                    </div>
+                                    <div style="width: 20px;"></div>
+                                    <p class="gs-country" id="F4-C">{{ i.gs_f4 }}</p>                
+                                </div> 
+                            </div>
+        
+                        </div>
+                    
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    <div style="height: 200px;"></div>
+    <h1 style="font-family: 'Poppins', sans-serif; font-size: 40px; text-align: center; color: white; margin-top: -20px;">Knockout Stage</h1>
+    <div style="height: 100px;"></div>
+
+    <div class="row-flex">
+        <div style="width: 23.5%;">
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-A-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-A-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-B-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-B-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-C-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-C-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-D-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-D-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-E-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-E-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-F-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-F-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-G-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-G-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-H-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R16-H-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+
+
+
+
+        </div>
+        <div style="width: 2%;"></div>
+        <div style="width: 23.5%;">
+            <div style="height: 60px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-A-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-A-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 140px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-B-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-B-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 140px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-C-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-C-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 140px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-D-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R8-D-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+
+        </div>
+        <div style="width: 2%;"></div>
+        <div style="width: 23.5%;">
+            <div style="height: 180px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R4-A-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R4-A-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+            <div style="height: 380px;"></div>
+            <div class="knockout-style ks-wl" style=" border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R4-B-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="R4-B-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+
+        </div>
+        <div style="width: 2%;"></div>
+        <div style="width: 23.5%;">
+            <div style="height: 410px;"></div>
+            <div class="ks-wl" style="height: 120px; border: 8px solid rgb(165, 75, 147); border-radius: 25px;">
+                <div style="height: 20px; background-color: rgb(165, 75, 147);">
+                    <h4 style="font-family: 'Poppins', sans-serif; font-size: 18px; margin-left: 2px;">Final</h4>
+                </div>
+
+                <div class="row-flex">
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="F-L"> 
+                        </div>
+                    </div>
+                    <div style="width: 50%; justify-content: center;" class="row-flex">
+                        <div>
+                            <div style="height: 10px;"></div>
+                            <img src="/static/nations/Default.jpg" class="knockout-images round-flag" alt="" id="F-W"> 
+                        </div>
+                    </div>
+                </div>           
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="result">
+        <div style="height: 200px;"></div>
+        <h1 style="font-family: 'Poppins', sans-serif; font-size: 45px; text-align: center; color: white;">Champion</h1> 
+        <div style="height: 80px;"></div>
+        <div class="col-flex">
+            <div class="row-flex" style="justify-content: center;">
+                <img src="/static/nations/Default.jpg" alt="" style="border-radius: 50%; height: 300px; width: 300px;" id="winner-I">
+            </div>
+            <div style="height: 50px;"></div>
+            <div class="row-flex" style="justify-content: center;">
+                <h1 class="country" style="color: white; font-size: 55px;" id="winner-C">{{ i.winner }}</h1>
+            </div>
+
+            {% if logged_in == True %}
+            {% if i.user_id == session_id %}
+                <div style="height: 80px;"></div>
+                <div>
+                    <div class="row-flex" style="justify-content: center;">
+                        <button onclick="delete_pred()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Delete</button>
+                    </div>
+                    <br>
+                    <div class="row-flex" style="justify-content: center;">
+                        <button onclick="download()" class="btn btn-warning" style="height: 50px; width: 150px; font-size: 20px;">Download</button>
+                    </div>
+                </div>
+            {% endif %}
+            {% endif %}
+
+    
+    
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div style="width: 8%;"></div>
+
+
+
+</div>
+
+<div style="display: none;" id="reference">
+    <p id="ks16_aw">{{ i.ks16_aw }}</p>
+    <p id="ks16_al">{{ i.ks16_al }}</p>
+    <p id="ks16_bw">{{ i.ks16_bw }}</p>
+    <p id="ks16_bl">{{ i.ks16_bl }}</p>
+    <p id="ks16_cw">{{ i.ks16_cw }}</p>
+    <p id="ks16_cl">{{ i.ks16_cl }}</p>
+    <p id="ks16_dw">{{ i.ks16_dw }}</p>
+    <p id="ks16_dl">{{ i.ks16_dl }}</p>
+    <p id="ks16_ew">{{ i.ks16_ew }}</p>
+    <p id="ks16_el">{{ i.ks16_el }}</p>
+    <p id="ks16_fw">{{ i.ks16_fw }}</p>
+    <p id="ks16_fl">{{ i.ks16_fl }}</p>
+    <p id="ks16_gw">{{ i.ks16_gw }}</p>
+    <p id="ks16_gl">{{ i.ks16_gl }}</p>
+    <p id="ks16_hw">{{ i.ks16_hw }}</p>
+    <p id="ks16_hl">{{ i.ks16_hl }}</p>
+    <p id="ks8_aw">{{ i.ks8_aw }}</p>
+    <p id="ks8_al">{{ i.ks8_al }}</p>
+    <p id="ks8_bw">{{ i.ks8_bw }}</p>
+    <p id="ks8_bl">{{ i.ks8_bl }}</p>
+    <p id="ks8_cw">{{ i.ks8_cw }}</p>
+    <p id="ks8_cl">{{ i.ks8_cl }}</p>
+    <p id="ks8_dw">{{ i.ks8_dw }}</p>
+    <p id="ks8_dl">{{ i.ks8_dl }}</p>
+    <p id="ks4_aw">{{ i.ks4_aw }}</p>
+    <p id="ks4_al">{{ i.ks4_al }}</p>
+    <p id="ks4_bw">{{ i.ks4_bw }}</p>
+    <p id="ks4_bl">{{ i.ks4_bl }}</p>
+    <p id="faw">{{ i.winner }}</p>
+    <p id="fal">{{ i.final_l }}</p>
+
+    <p id="a1">{{ i.gs_a1 }}</p>
+    <p id="a2">{{ i.gs_a2 }}</p>
+    <p id="a3">{{ i.gs_a3 }}</p>
+    <p id="a4">{{ i.gs_a4 }}</p>
+    <p id="b1">{{ i.gs_b1 }}</p>
+    <p id="b2">{{ i.gs_b2 }}</p>
+    <p id="b3">{{ i.gs_b3 }}</p>
+    <p id="b4">{{ i.gs_b4 }}</p>
+    <p id="c1">{{ i.gs_c1 }}</p>
+    <p id="c2">{{ i.gs_c2 }}</p>
+    <p id="c3">{{ i.gs_c3 }}</p>
+    <p id="c4">{{ i.gs_c4 }}</p>
+    <p id="d1">{{ i.gs_d1 }}</p>
+    <p id="d2">{{ i.gs_d2 }}</p>
+    <p id="d3">{{ i.gs_d3 }}</p>
+    <p id="d4">{{ i.gs_d4 }}</p>
+    <p id="e1">{{ i.gs_e1 }}</p>
+    <p id="e2">{{ i.gs_e2 }}</p>
+    <p id="e3">{{ i.gs_e3 }}</p>
+    <p id="e4">{{ i.gs_e4 }}</p>
+    <p id="f1">{{ i.gs_f1 }}</p>
+    <p id="f2">{{ i.gs_f2 }}</p>
+    <p id="f3">{{ i.gs_f3 }}</p>
+    <p id="f4">{{ i.gs_f4 }}</p>
+    <p id="btf_1">{{ i.btf_1 }}</p>
+    <p id="btf_2">{{ i.btf_2 }}</p>
+    <p id="btf_3">{{ i.btf_3 }}</p>
+    <p id="btf_4">{{ i.btf_4 }}</p>
+    <p id="btf_l1">{{ i.btf_l1 }}</p>
+    <p id="btf_l2">{{ i.btf_l2 }}</p>
+    <p id="username_ref">{{ i.username }}</p>
+    <p id="pred_id_ref">{{ i.id }}</p>
+
+
+
+
+
+</div>
+
+
+
+
+
+<style>
+
+    .row-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .number {
+        color: black;
+        margin: 15px -20px 0 20px;
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 25px; 
+        width: 60px;
+    }
+
+    .gs-country {
+        color: black; 
+        font-size: 30px; 
+        font-family: 'Open Sans', sans-serif; 
+        margin: 10px 0 8px 0;
+    }
+
+    .gs-image {
+        height: 40px; 
+        width: 40px; 
+        border-radius: 50%;
+    }
+
+    .knockout-style {
+        height: 100px; 
+        width: 100%; 
+    }
+
+    .ks-wl {
+        background: linear-gradient(to right, tomato 50%, springgreen 50%);
+    }
+
+    .knockout-images {
+        height: 66px; 
+        width: 66px;
+    }
+
+    .round-flag {
+        border-radius: 50%;
+    }
+
+    .country {
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 35px; 
+        margin-top: 25px;
+    }
+
+
+
+
+
+</style>
+
+
+<script>
+
+rendergsi();
+
+function rendergsi()
+{
+    var a1i = document.getElementById('A1-I');
+    var a1c = document.getElementById('A1-C').innerHTML;
+    a1i.src = '/static/nations/'.concat(a1c).concat('.jpg');
+    var a2i = document.getElementById('A2-I');
+    var a2c = document.getElementById('A2-C').innerHTML;
+    a2i.src = '/static/nations/'.concat(a2c).concat('.jpg');
+    var a3i = document.getElementById('A3-I');
+    var a3c = document.getElementById('A3-C').innerHTML;
+    a3i.src = '/static/nations/'.concat(a3c).concat('.jpg');
+    var a4i = document.getElementById('A4-I');
+    var a4c = document.getElementById('A4-C').innerHTML;
+    a4i.src = '/static/nations/'.concat(a4c).concat('.jpg');
+
+    var b1i = document.getElementById('B1-I');
+    var b1c = document.getElementById('B1-C').innerHTML;
+    b1i.src = '/static/nations/'.concat(b1c).concat('.jpg');
+    var b2i = document.getElementById('B2-I');
+    var b2c = document.getElementById('B2-C').innerHTML;
+    b2i.src = '/static/nations/'.concat(b2c).concat('.jpg');
+    var b3i = document.getElementById('B3-I');
+    var b3c = document.getElementById('B3-C').innerHTML;
+    b3i.src = '/static/nations/'.concat(b3c).concat('.jpg');
+    var b4i = document.getElementById('B4-I');
+    var b4c = document.getElementById('B4-C').innerHTML;
+    b4i.src = '/static/nations/'.concat(b4c).concat('.jpg');
+
+    var c1i = document.getElementById('C1-I');
+    var c1c = document.getElementById('C1-C').innerHTML;
+    c1i.src = '/static/nations/'.concat(c1c).concat('.jpg');
+    var c2i = document.getElementById('C2-I');
+    var c2c = document.getElementById('C2-C').innerHTML;
+    c2i.src = '/static/nations/'.concat(c2c).concat('.jpg');
+    var c3i = document.getElementById('C3-I');
+    var c3c = document.getElementById('C3-C').innerHTML;
+    c3i.src = '/static/nations/'.concat(c3c).concat('.jpg');
+    var c4i = document.getElementById('C4-I');
+    var c4c = document.getElementById('C4-C').innerHTML;
+    c4i.src = '/static/nations/'.concat(c4c).concat('.jpg');
+
+    var d1i = document.getElementById('D1-I');
+    var d1c = document.getElementById('D1-C').innerHTML;
+    d1i.src = '/static/nations/'.concat(d1c).concat('.jpg');
+    var d2i = document.getElementById('D2-I');
+    var d2c = document.getElementById('D2-C').innerHTML;
+    d2i.src = '/static/nations/'.concat(d2c).concat('.jpg');
+    var d3i = document.getElementById('D3-I');
+    var d3c = document.getElementById('D3-C').innerHTML;
+    d3i.src = '/static/nations/'.concat(d3c).concat('.jpg');
+    var d4i = document.getElementById('D4-I');
+    var d4c = document.getElementById('D4-C').innerHTML;
+    d4i.src = '/static/nations/'.concat(d4c).concat('.jpg');
+
+    var e1i = document.getElementById('E1-I');
+    var e1c = document.getElementById('E1-C').innerHTML;
+    e1i.src = '/static/nations/'.concat(e1c).concat('.jpg');
+    var e2i = document.getElementById('E2-I');
+    var e2c = document.getElementById('E2-C').innerHTML;
+    e2i.src = '/static/nations/'.concat(e2c).concat('.jpg');
+    var e3i = document.getElementById('E3-I');
+    var e3c = document.getElementById('E3-C').innerHTML;
+    e3i.src = '/static/nations/'.concat(e3c).concat('.jpg');
+    var e4i = document.getElementById('E4-I');
+    var e4c = document.getElementById('E4-C').innerHTML;
+    e4i.src = '/static/nations/'.concat(e4c).concat('.jpg');
+
+    var f1i = document.getElementById('F1-I');
+    var f1c = document.getElementById('F1-C').innerHTML;
+    f1i.src = '/static/nations/'.concat(f1c).concat('.jpg');
+    var f2i = document.getElementById('F2-I');
+    var f2c = document.getElementById('F2-C').innerHTML;
+    f2i.src = '/static/nations/'.concat(f2c).concat('.jpg');
+    var f3i = document.getElementById('F3-I');
+    var f3c = document.getElementById('F3-C').innerHTML;
+    f3i.src = '/static/nations/'.concat(f3c).concat('.jpg');
+    var f4i = document.getElementById('F4-I');
+    var f4c = document.getElementById('F4-C').innerHTML;
+    f4i.src = '/static/nations/'.concat(f4c).concat('.jpg');
+
+    var r16aw = document.getElementById('R16-A-W');
+    r16aw.src = '/static/nations/'.concat(document.getElementById('ks16_aw').innerHTML).concat('.jpg');
+    var r16al = document.getElementById('R16-A-L');
+    r16al.src = '/static/nations/'.concat(document.getElementById('ks16_al').innerHTML).concat('.jpg');
+    var r16bw = document.getElementById('R16-B-W');
+    r16bw.src = '/static/nations/'.concat(document.getElementById('ks16_bw').innerHTML).concat('.jpg');
+    var r16bl = document.getElementById('R16-B-L');
+    r16bl.src = '/static/nations/'.concat(document.getElementById('ks16_bl').innerHTML).concat('.jpg');
+    var r16cw = document.getElementById('R16-C-W');
+    r16cw.src = '/static/nations/'.concat(document.getElementById('ks16_cw').innerHTML).concat('.jpg');
+    var r16cl = document.getElementById('R16-C-L');
+    r16cl.src = '/static/nations/'.concat(document.getElementById('ks16_cl').innerHTML).concat('.jpg');
+    var r16dw = document.getElementById('R16-D-W');
+    r16dw.src = '/static/nations/'.concat(document.getElementById('ks16_dw').innerHTML).concat('.jpg');
+    var r16dl = document.getElementById('R16-D-L');
+    r16dl.src = '/static/nations/'.concat(document.getElementById('ks16_dl').innerHTML).concat('.jpg');
+    var r16ew = document.getElementById('R16-E-W');
+    r16ew.src = '/static/nations/'.concat(document.getElementById('ks16_ew').innerHTML).concat('.jpg');
+    var r16el = document.getElementById('R16-E-L');
+    r16el.src = '/static/nations/'.concat(document.getElementById('ks16_el').innerHTML).concat('.jpg');
+    var r16fw = document.getElementById('R16-F-W');
+    r16fw.src = '/static/nations/'.concat(document.getElementById('ks16_fw').innerHTML).concat('.jpg');
+    var r16fl = document.getElementById('R16-F-L');
+    r16fl.src = '/static/nations/'.concat(document.getElementById('ks16_fl').innerHTML).concat('.jpg');
+    var r16gw = document.getElementById('R16-G-W');
+    r16gw.src = '/static/nations/'.concat(document.getElementById('ks16_gw').innerHTML).concat('.jpg');
+    var r16gl = document.getElementById('R16-G-L');
+    r16gl.src = '/static/nations/'.concat(document.getElementById('ks16_gl').innerHTML).concat('.jpg');
+    var r16hw = document.getElementById('R16-H-W');
+    r16hw.src = '/static/nations/'.concat(document.getElementById('ks16_hw').innerHTML).concat('.jpg');
+    var r16hl = document.getElementById('R16-H-L');
+    r16hl.src = '/static/nations/'.concat(document.getElementById('ks16_hl').innerHTML).concat('.jpg');
+    var r8aw = document.getElementById('R8-A-W');
+    r8aw.src = '/static/nations/'.concat(document.getElementById('ks8_aw').innerHTML).concat('.jpg');
+    var r8al = document.getElementById('R8-A-L');
+    r8al.src = '/static/nations/'.concat(document.getElementById('ks8_al').innerHTML).concat('.jpg');
+    var r8bw = document.getElementById('R8-B-W');
+    r8bw.src = '/static/nations/'.concat(document.getElementById('ks8_bw').innerHTML).concat('.jpg');
+    var r8bl = document.getElementById('R8-B-L');
+    r8bl.src = '/static/nations/'.concat(document.getElementById('ks8_bl').innerHTML).concat('.jpg');
+    var r8cw = document.getElementById('R8-C-W');
+    r8cw.src = '/static/nations/'.concat(document.getElementById('ks8_cw').innerHTML).concat('.jpg');
+    var r8cl = document.getElementById('R8-C-L');
+    r8cl.src = '/static/nations/'.concat(document.getElementById('ks8_cl').innerHTML).concat('.jpg');
+    var r8dw = document.getElementById('R8-D-W');
+    r8dw.src = '/static/nations/'.concat(document.getElementById('ks8_dw').innerHTML).concat('.jpg');
+    var r8dl = document.getElementById('R8-D-L');
+    r8dl.src = '/static/nations/'.concat(document.getElementById('ks8_dl').innerHTML).concat('.jpg');
+    var r4aw = document.getElementById('R4-A-W');
+    r4aw.src = '/static/nations/'.concat(document.getElementById('ks4_aw').innerHTML).concat('.jpg');
+    var r4al = document.getElementById('R4-A-L');
+    r4al.src = '/static/nations/'.concat(document.getElementById('ks4_al').innerHTML).concat('.jpg');
+    var r4bw = document.getElementById('R4-B-W');
+    r4bw.src = '/static/nations/'.concat(document.getElementById('ks4_bw').innerHTML).concat('.jpg');
+    var r4bl = document.getElementById('R4-B-L');
+    r4bl.src = '/static/nations/'.concat(document.getElementById('ks4_bl').innerHTML).concat('.jpg');
+    var faw = document.getElementById('F-W');
+    faw.src = '/static/nations/'.concat(document.getElementById('faw').innerHTML).concat('.jpg');
+    var fal = document.getElementById('F-L');
+    fal.src = '/static/nations/'.concat(document.getElementById('fal').innerHTML).concat('.jpg');
+    var winner_image = document.getElementById('winner-I');
+    winner_image.src = '/static/nations/'.concat(document.getElementById('faw').innerHTML).concat('.jpg');
+}
+
+function download()
+{
+    var a1 = document.getElementById('a1').innerHTML;
+    var a2 = document.getElementById('a2').innerHTML;
+    var a3 = document.getElementById('a3').innerHTML;
+    var a4 = document.getElementById('a4').innerHTML;
+    var b1 = document.getElementById('b1').innerHTML;
+    var b2 = document.getElementById('b2').innerHTML;
+    var b3 = document.getElementById('b3').innerHTML;
+    var b4 = document.getElementById('b4').innerHTML;
+    var c1 = document.getElementById('c1').innerHTML;
+    var c2 = document.getElementById('c2').innerHTML;
+    var c3 = document.getElementById('c3').innerHTML;
+    var c4 = document.getElementById('c4').innerHTML;
+    var d1 = document.getElementById('d1').innerHTML;
+    var d2 = document.getElementById('d2').innerHTML;
+    var d3 = document.getElementById('d3').innerHTML;
+    var d4 = document.getElementById('d4').innerHTML;
+    var e1 = document.getElementById('e1').innerHTML;
+    var e2 = document.getElementById('e2').innerHTML;
+    var e3 = document.getElementById('e3').innerHTML;
+    var e4 = document.getElementById('e4').innerHTML;
+    var f1 = document.getElementById('f1').innerHTML;
+    var f2 = document.getElementById('f2').innerHTML;
+    var f3 = document.getElementById('f3').innerHTML;
+    var f4 = document.getElementById('f4').innerHTML;
+    var btf_1 = document.getElementById('btf_1').innerHTML;
+    var btf_2 = document.getElementById('btf_2').innerHTML;
+    var btf_3 = document.getElementById('btf_3').innerHTML;
+    var btf_4 = document.getElementById('btf_4').innerHTML;
+    var btf_l1 = document.getElementById('btf_l1').innerHTML;
+    var btf_l2 = document.getElementById('btf_l2').innerHTML;
+
+    var ks16_aw = document.getElementById('ks16_aw').innerHTML;
+    var ks16_al = document.getElementById('ks16_al').innerHTML;
+    var ks16_bw = document.getElementById('ks16_bw').innerHTML;
+    var ks16_bl = document.getElementById('ks16_bl').innerHTML;
+    var ks16_cw = document.getElementById('ks16_cw').innerHTML;
+    var ks16_cl = document.getElementById('ks16_cl').innerHTML;
+    var ks16_dw = document.getElementById('ks16_dw').innerHTML;
+    var ks16_dl = document.getElementById('ks16_dl').innerHTML;
+    var ks16_ew = document.getElementById('ks16_ew').innerHTML;
+    var ks16_el = document.getElementById('ks16_el').innerHTML;
+    var ks16_fw = document.getElementById('ks16_fw').innerHTML;
+    var ks16_fl = document.getElementById('ks16_fl').innerHTML;
+    var ks16_gw = document.getElementById('ks16_gw').innerHTML;
+    var ks16_gl = document.getElementById('ks16_gl').innerHTML;
+    var ks16_hw = document.getElementById('ks16_hw').innerHTML;
+    var ks16_hl = document.getElementById('ks16_hl').innerHTML;
+
+    var ks8_aw = document.getElementById('ks8_aw').innerHTML;
+    var ks8_al = document.getElementById('ks8_al').innerHTML;
+    var ks8_bw = document.getElementById('ks8_bw').innerHTML;
+    var ks8_bl = document.getElementById('ks8_bl').innerHTML;
+    var ks8_cw = document.getElementById('ks8_cw').innerHTML;
+    var ks8_cl = document.getElementById('ks8_cl').innerHTML;
+    var ks8_dw = document.getElementById('ks8_dw').innerHTML;
+    var ks8_dl = document.getElementById('ks8_dl').innerHTML;
+
+    var ks4_aw = document.getElementById('ks4_aw').innerHTML;
+    var ks4_al = document.getElementById('ks4_al').innerHTML;
+    var ks4_bw = document.getElementById('ks4_bw').innerHTML;
+    var ks4_bl = document.getElementById('ks4_bl').innerHTML;
+
+    var final_l = document.getElementById('fal').innerHTML;
+    var winner = document.getElementById('faw').innerHTML;
+    var username = document.getElementById('username_ref').innerHTML;
+
+
+
+
+
+    location.href = '/pdf/'.concat(a1).concat('/').concat(a2).concat('/').concat(a3).concat('/').concat(a4).concat('/')
+            .concat(b1).concat('/').concat(b2).concat('/').concat(b3).concat('/').concat(b4).concat('/')
+            .concat(c1).concat('/').concat(c2).concat('/').concat(c3).concat('/').concat(c4).concat('/')
+            .concat(d1).concat('/').concat(d2).concat('/').concat(d3).concat('/').concat(d4).concat('/')
+            .concat(e1).concat('/').concat(e2).concat('/').concat(e3).concat('/').concat(e4).concat('/')
+            .concat(f1).concat('/').concat(f2).concat('/').concat(f3).concat('/').concat(f4).concat('/')
+            .concat(btf_1).concat('/').concat(btf_2).concat('/').concat(btf_3).concat('/').concat(btf_4).concat('/')
+            .concat(btf_l1).concat('/').concat(btf_l2).concat('/')
+            .concat(ks16_aw).concat('/').concat(ks16_al).concat('/').concat(ks16_bw).concat('/').concat(ks16_bl).concat('/')
+            .concat(ks16_cw).concat('/').concat(ks16_cl).concat('/').concat(ks16_dw).concat('/').concat(ks16_dl).concat('/')
+            .concat(ks16_ew).concat('/').concat(ks16_el).concat('/').concat(ks16_fw).concat('/').concat(ks16_fl).concat('/')
+            .concat(ks16_gw).concat('/').concat(ks16_gl).concat('/').concat(ks16_hw).concat('/').concat(ks16_hl).concat('/')
+            .concat(ks8_aw).concat('/').concat(ks8_al).concat('/').concat(ks8_bw).concat('/').concat(ks8_bl).concat('/')
+            .concat(ks8_cw).concat('/').concat(ks8_cl).concat('/').concat(ks8_dw).concat('/').concat(ks8_dl).concat('/')
+            .concat(ks4_aw).concat('/').concat(ks4_al).concat('/').concat(ks4_bw).concat('/').concat(ks4_bl).concat('/')
+            .concat(final_l).concat('/').concat(winner).concat('/').concat(username);
+
+}
+
+function delete_pred()
+{
+    if (confirm('Do you really want to delete this prediction?'))
+    {
+        location.href = '/delete/'.concat(document.getElementById('pred_id_ref').innerHTML);
+    }
+}
+</script>
+
+
+
+{% endblock %}

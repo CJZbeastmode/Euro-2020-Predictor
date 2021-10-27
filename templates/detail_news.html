@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+News Detail
+{% endblock %}
+
+{% block body %}
+{% load static %}
+
+<div style="display: flex; flex-direction: row;">
+
+    <div style="width: 8%;"></div>
+    <div style="width: 84%;">
+        <h1 class="tac">{{ news.title }}</h1>
+
+        <br><br>
+
+        <div class='tac'>
+            <i class='fa fa-user'></i> {{ news.author }}
+            &nbsp; 
+            <i class='fa fa-calendar'></i> {{ news.datetime }}
+            <br> <div style="height: 50px;"></div>
+
+            <div style="height: 50px;"></div>
+            <div style="text-align: start;">
+                <p>{{ news.content }}</p>
+            </div>
+            <div style="height: 50px;"></div>
+            <a href="{% url 'newsroom' %}"><button class="btn btn-warning">Return</button></a>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<style>
+    .item-box {
+        height: 200px; 
+        width: 90%; 
+        margin-bottom: 30px;
+        display: flex; 
+        flex-direction: row;
+        border-bottom: 1px grey solid;
+    }
+</style>
+{% endblock %}

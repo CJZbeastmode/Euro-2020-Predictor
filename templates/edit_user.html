@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Edit User
+{% endblock %}
+
+
+{% block body %}
+
+
+
+    <h1 class="tac">Edit User</h1>
+    <br><br>
+
+
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="tac">
+
+            {% for i in form %}
+				{% if i.errors %}<li style="color: red">{{ i.label }}: {{ i.errors|striptags }}</li>{% endif %}
+			{% endfor %}
+            <br>
+
+            {{ form.first_name.label }} <div class="gap"></div>
+            {{ form.first_name }}
+
+            <br><br>
+
+            {{ form.last_name.label }} <div class="gap"></div>
+            {{ form.last_name }}
+
+            <br><br><hr><br>
+
+            {{ form.username.label }} <div class="gap"></div>
+            {{ form.username }}
+
+            <br><br>
+
+            {{ form.email.label }} <div class="gap"></div>
+            {{ form.email }}
+
+            <br><br>
+
+            {{ form.password1.label }} <div class="gap"></div>
+            {{ form.password1 }}
+
+            <br><br>
+
+            {{ form.password2.label }} <div class="gap"></div>
+            {{ form.password2 }}
+
+
+            <br><br><br>
+
+            <input type="submit" class="btn btn-dark" value="Update" name="Create User">
+        </div>
+    </form>
+{% endblock %}

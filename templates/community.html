@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block title %} Community {% endblock %}
+
+{% block body %}
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/59c08bc980.js" crossorigin="anonymous"></script>
+
+
+<div style="display: flex; flex-direction: row;">
+    <div style="width: 8%;"></div>
+    <div style="width: 84%;">
+        <h1 style="font-size: 40px;">Community</h1>
+        <div style="height: 100px;"></div>
+
+
+
+
+        <div style="display: grid; grid-template-columns: auto auto auto auto; grid-gap: 50px 20px;">
+            
+            {% for i in preds %}
+            <a href="{% url 'prediction' id=i.id %}">
+                <div class="box-style">
+                    <p class="box-header">By {{ i.username|truncatechars:9 }}, {{ i.create_time|slice:10 }}</p>
+                    <p class="country"><i class="fa fa-trophy" style="width: 40px;"></i>{{ i.winner }}</p>
+                    <p class="country"><i class="fa fa-medal" style="width: 40px;"></i>{{ i.final_l }}</p>
+                </div>
+            </a>
+            
+            {% endfor %}
+
+
+        </div>
+
+        <div style="height: 100px;"></div>
+        <div class="pagination">
+            <span class="step-links">
+                {% if preds.has_previous %}
+                    <a href="{% url 'community' %}?page=1" style="color: black;">&lt;&lt;</a> &nbsp;
+                    <a href="{% url 'community' %}?page={{ preds.previous_page_number }}" style="color: black;">&lt;</a>&nbsp;&nbsp;
+                {% endif %}
+        
+                <span class="current">
+                    <a href="#" style="color: black;">{{ preds.number }} / {{ preds.paginator.num_pages }}</a>&nbsp;&nbsp;
+                </span>
+        
+                {% if preds.has_next %}
+                    <a href="{% url 'community' %}?page={{ preds.next_page_number }}" style="color: black;">&gt;</a>&nbsp;
+                    <a href="{% url 'community' %}?page={{ preds.paginator.num_pages }}" style="color: black;">&gt;&gt;</a>
+                {% endif %}
+            </span>
+        </div>
+    
+
+    </div>
+    <div style="width: 8%;"></div>
+
+
+
+
+</div>
+
+<style>
+    .country {
+        font-size: 25px; 
+        font-family: 'Open Sans', sans-serif; 
+        color: black;
+    }
+
+    .box-header {
+        font-family: 'Open Sans', sans-serif; 
+        color: black;
+    }
+
+    .box-style {
+        background-color: white; 
+        border: 10px solid rgb(165, 75, 147); 
+        border-radius: 25px; 
+        padding: 15px 0 5px 20px;
+        width: 280px;
+    }
+</style>
+
+{% endblock %}

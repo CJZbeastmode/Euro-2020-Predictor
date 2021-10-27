@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro 2020 Prediction</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div>
+        {% if name != None %}
+        <h1 style="font-size: 30px; font-weight: 300;">{{ name }}'s Euro 2020 Prediction</h1>
+        {% else %}
+        <h1 style="font-size: 30px; font-weight: 300;">Euro 2020 Prediction</h1>
+        {% endif %}
+    </div>
+    <br>
+
+    <div>
+        <h1 style="font-size: 25px; font-weight: 300;">Group Stage</h1>
+
+        <div style="display: flex; flex-direction: column;">
+            <div>
+                <h1 style="font-size: 20px; font-weight: 300;">Group A</h1>
+                <p style="font-size: 20px; font-weight: 300;">{{ a1 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ a2 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ a3 }}{% if a3 == l1 or a3 == l2 %}&nbsp;(Eliminated){% endif %}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ a4 }}</p>
+            </div>
+            <hr>
+            <div>
+                <h1 style="font-size: 20px; font-weight: 300;">Group B</h1>
+                <p style="font-size: 20px; font-weight: 300;">{{ b1 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ b2 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ b3 }}{% if b3 == l1 or b3 == l2 %}&nbsp;(Eliminated){% endif %}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ b4 }}</p>
+            </div>
+            <hr>
+            <div>
+                <h1 style="font-size: 20px; font-weight: 300;">Group C</h1>
+                <p style="font-size: 20px; font-weight: 300;">{{ c1 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ c2 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ c3 }}{% if c3 == l1 or c3 == l2 %}&nbsp;(Eliminated){% endif %}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ c4 }}</p>
+            </div>
+            <hr>
+            <div>
+                <h1 style="font-size: 20px; font-weight: 300;">Group D</h1>
+                <p style="font-size: 20px; font-weight: 300;">{{ d1 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ d2 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ d3 }}{% if d3 == l1 or d3 == l2 %}&nbsp;(Eliminated){% endif %}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ d4 }}</p>
+            </div>
+            <hr>
+
+            <div>
+                <h1 style="font-size: 20px; font-weight: 300;">Group E</h1>
+                <p style="font-size: 20px; font-weight: 300;">{{ e1 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ e2 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ e3 }}{% if e3 == l1 or e3 == l2 %}&nbsp;(Eliminated){% endif %}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ e4 }}</p>
+            </div>
+            <hr>
+
+            <div>
+                <h1 style="font-size: 20px; font-weight: 300;">Group F</h1>
+                <p style="font-size: 20px; font-weight: 300;">{{ f1 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ f2 }}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ f3 }}{% if f3 == l1 or f3 == l2 %}&nbsp;(Eliminated){% endif %}</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ f4 }}</p>
+            </div>
+        
+        </div>
+        
+    </div>
+
+    <pdf:nextpage /> 
+    <div>
+        <h1 style="font-size: 25px; font-weight: 300;">Knockout Stage - Round of 16</h1>
+        <div style="display: flex; flex-direction: column;">
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_aw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_al }} (Eliminated)</p>
+            </div>
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_bw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_bl }} (Eliminated)</p>
+            </div>
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_cw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_cl }} (Eliminated)</p>
+            </div>
+
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_dw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_dl }} (Eliminated)</p>
+            </div>
+
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_ew }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_el }} (Eliminated)</p>
+            </div>
+
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_fw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_fl }} (Eliminated)</p>
+            </div>
+
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_gw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_gl }} (Eliminated)</p>
+            </div>
+
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_hw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks16_hl }} (Eliminated)</p>
+            </div>
+
+
+
+
+        </div>
+    
+    </div>
+    
+    <pdf:nextpage /> 
+    <div>
+        <h1 style="font-size: 25px; font-weight: 300;">Knockout Stage - Quarter-Finals</h1>
+        <div style="display: flex; flex-direction: column;">
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks8_aw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks8_al }} (Eliminated)</p>
+            </div>
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks8_bw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks8_bl }} (Eliminated)</p>
+            </div>
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks8_cw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks8_cl }} (Eliminated)</p>
+            </div>
+
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks8_dw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks8_dl }} (Eliminated)</p>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <div>
+        <h1 style="font-size: 25px; font-weight: 300;">Knockout Stage - Semi-Finals</h1>
+        <div style="display: flex; flex-direction: column;">
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks4_aw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks4_al }} (Eliminated)</p>
+            </div>
+            <hr>
+            <div>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks4_bw }} (Advance)</p>
+                <p style="font-size: 20px; font-weight: 300;">{{ ks4_bl }} (Eliminated)</p>
+            </div>
+        </div>
+    </div>
+
+    <pdf:nextpage /> 
+    <div>
+        <h1 style="font-size: 25px; font-weight: 300;">Final</h1>
+        <div>
+            <p style="font-size: 20px; font-weight: 300;">{{ winner }} (Winner)</p>
+            <p style="font-size: 20px; font-weight: 300;">{{ second_place }} (Second Place)</p>
+        </div>
+    </div>
+
+    <br>
+    <div>
+        <h1 style="font-size: 25px; font-weight: 300;">Summary</h1>
+        <div>
+            <p style="font-size: 20px; font-weight: 300;">Group Stage: {{ a4 }}, {{ b4 }}, {{ c4 }}, {{ d4 }}, {{ e4 }}, {{ f4 }}, {{ l1 }}, {{ l2 }}</p>
+            <p style="font-size: 20px; font-weight: 300;">Round of 16: {{ ks16_al }}, {{ ks16_bl }}, {{ ks16_cl }}, {{ ks16_dl }}, {{ ks16_el }}, {{ ks16_fl }}, {{ ks16_gl }}, {{ ks16_hl }}</p>
+            <p style="font-size: 20px; font-weight: 300;">Quarter-Finals: {{ ks8_al }}, {{ ks8_bl }}, {{ ks8_cl }}, {{ ks8_dl }}</p>
+            <p style="font-size: 20px; font-weight: 300;">Semi-Finals: {{ ks4_al }}, {{ ks4_bl }},</p>
+            <p style="font-size: 20px; font-weight: 300;">Second Place: {{ second_place }}</p>
+            <p style="font-size: 20px; font-weight: 300;">Tournament Winner: {{ winner }}</p>
+
+        </div>
+    </div>
+
+
+
+</body>
+</html>
